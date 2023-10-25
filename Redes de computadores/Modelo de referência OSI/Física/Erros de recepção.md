@@ -1,0 +1,6 @@
+- causados por:
+	- atenuação de sinal
+	- interferências externas
+	- Crosstalk: interferências internas
+	- Distorção: diferentes tempos de propagação das frequencias de multiplos canais
+- necessidade de repetidores

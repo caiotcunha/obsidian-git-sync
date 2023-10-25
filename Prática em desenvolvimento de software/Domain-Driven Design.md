@@ -1,0 +1,10 @@
+- domínio (problema que o sistema resolve) e tecnologia (interface com usuário)
+- Maior atenção ao domínio
+- Linguagem ubíqua: meio termo entre linguagem de dev e negócio
+- Objetos de Domínio:
+	- Entidades: Objeto de identidade única que o distingue
+	- Objetos de valor: Caracterizados pelo seu estado, valores de seus atributos
+	- Serviços: Objetos que agrupam operações importantes do domínio
+	- Agregados: Grupo de entidades e objetos de valor que possuem unidade semantica, são persistidos em conjunto em bancos de dados
+	- Repositórios: Objeto que recupera outros objetos do domínio de um BD
+- Contextos Delimitados: Grandes organizações possuem vários modelos de domínio, cada contexto delimitado possui uma linguagem de domínio própria

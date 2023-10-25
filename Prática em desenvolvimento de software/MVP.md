@@ -1,0 +1,19 @@
+- Experimento pra testar uma ideia.
+- Hipótese: testa se a ideia tem valor, se é a útil, se tem clientela, etc
+- Objetivo de MVP: descobrir se sua hipótese é verdadeira pelo menor custo
+- É indicado para contextos de incerteza
+- Tipos:
+	- Landing Page: Validação bem inicial, apenas para capturar leads. Muito simples e menos poderoso de MVP.
+	- Mágico de Oz: Backend manual
+	- Concierge: Atendimento todo manual (ex: sistema de caronas aluno ufmg)
+	- Simple App: simple app com front e back simples
+- Pivo != Restart
+- Pivo = MVP +  grandes ajustes
+- Tipos de pivô:
+	- Zoom-in: uma feature vira novo produto
+	- Zoom-out: MVP vira uma feature de produto maior
+	- Segmento de clientes
+	- Aplicação para plataforma
+	- Modelo de negócios
+	- Canal de distribuição
+	- Tecnologia

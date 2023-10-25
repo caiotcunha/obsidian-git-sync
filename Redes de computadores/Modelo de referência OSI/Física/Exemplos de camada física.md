@@ -1,0 +1,22 @@
+- Cabo coaxial:
+	- muito usado em transmissões analógicas e digitais
+- Par trançado:
+	- pode existir ou não capacidade de blindagem empregada
+- Fibra óptica:
+	- transmitem dados através da luz
+	- usada para interligar continentes através cabos submarinos
+	- geralmente em aneis
+	- topologia em estrela
+		- vantagens:
+			- alcance
+			- capacidade de transmissão
+			- segurança
+			- menos peso
+		- desvantagens:
+			- caro
+			- custo de fusão
+- Rede elétrica:
+	- pode ser usada para transmitir dados
+- Transmissão sem fio:
+	- meio eletromagnético
+	- canais de frequência as vezes reservados para usos específicos

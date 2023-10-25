@@ -1,0 +1,8 @@
+- responsável por estabelecer sessões entre usuários em máquinas diferentes 
+- controle de diálogo
+- gerenciamento de tokens
+- sincronização
+- controla a seção do usuário
+	- autenticação
+	- permissões
+	- identificação

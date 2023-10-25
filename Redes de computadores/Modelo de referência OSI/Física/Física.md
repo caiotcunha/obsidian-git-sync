@@ -1,0 +1,5 @@
+- responsável pela transmissão física de bits no canal de comunicação
+- No modelo TCP/IP, ela é "fundida" com a camada de enlace.
+- Portadora: a portadora é o meio em que os dados serão transportados. Pode ser: frequência eletromagnética nas comunicações sem fio, fótons e ondas sonoras
+- Modulação: forma que empregamos para transportar um sinal na portadora
+	- pode ser feita de diferentes formas [[Sinal Binário]], [[Modulação na frequência]], [[Modulação na amplitude]], [[Modulação na fase]].

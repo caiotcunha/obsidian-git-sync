@@ -1,0 +1,17 @@
+- Coordenação de acesso ao meio
+- acesso de vários terminais ou estações a um mesmo canal
+- tipos de trasmisssão:
+	- unicast -> pra um
+	- broadcast ->pra todos
+	- multicast-> pra varios
+	- custo igual pois meio compartilhado
+- alocação dinâmica
+- probabilidade grande ruim para redes com muitas transmissões
+- probabilidade pequena bom para redes com muitas transmissões
+- CSMA/CA: collision avoidance
+	- identifica colisão pelo check sum
+	- recebe ack
+- CSMA/CD: collision detection
+	- transmissor identifica colisão
+	- transmissão de codigo de colisao (jammig)
+- 

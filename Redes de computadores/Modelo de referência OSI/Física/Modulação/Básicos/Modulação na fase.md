@@ -1,0 +1,1 @@
+- sempre que a fase muda você troca de um para o outro

@@ -1,0 +1,3 @@
+- simplex- somente em um sentido
+- half duplex - alternada
+- full duplex - nos sentidos

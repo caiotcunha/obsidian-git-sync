@@ -1,0 +1,11 @@
+- Baseado em duas tracks em paralelo:
+	- Track de shaping: track de especificação de requisitos, o objetivo é produzir um conjunto de pitches ( especificação leve de requisitos e design ).
+	- Track de desenvolvimento: ciclos + cool down
+- Pitches: Solução de meio termo
+	- Mais detalhados do que histórias de usuários
+	- Menos detalhados que especificações tradicionais de requisitos
+	- Estrutura: descrição detalhada, esboço da solução, No go's, rabbit holes (detalhes a serem evitados).
+- Shaping: shapers escrevem os pitches, reunião final para decidir pitches, um dos membros é o decisor
+- Ciclos: duração de 6 semanas, em geral mais longos
+- Times menores 2 devs + 1 design
+- Cool Down: 2 semanas, respirar, corrigir bugs e refatorar

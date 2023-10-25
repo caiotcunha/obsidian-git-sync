@@ -1,0 +1,8 @@
+- responsável pelo transporte fim a fim dos dados entre a origem e o destino
+- oferece diferentes tipos de servição para a camada de sessão:
+	- conexão ponto-a-ponto confiável que por garante a ordem de transmissão das mensagens
+	- difusão de mensagens
+- mecanismo de identificação de mensagens e controle de fluxo
+- controle fluxo
+- pode ter máquina de estado para estabelecimento de conexões
+- controle de cogestionamento

@@ -1,0 +1,5 @@
+- Qual o tempo de transmissão de 4GB de dados em uma rede de 56kbps? e em uma rede de 100Mbps?
+	- 4x8x2³⁰ =  número de bits a serem transmitidos -> usa base 2
+	- 56000 bits por segundo -> usa base 10
+	- divide um pelo outro
+- 

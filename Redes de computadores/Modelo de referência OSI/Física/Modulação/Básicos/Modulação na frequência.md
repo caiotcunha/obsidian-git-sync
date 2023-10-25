@@ -1,0 +1,2 @@
+- muda a frequência para definir se é 0 ou 1
+- alta frequência -> um

@@ -1,0 +1,10 @@
+- Uma trava com contador associado.
+- Possui um conjunto de operações atômicas.
+	- Down / wait / acquire: 
+		- se contador é 0 -> espera até ser maior que zero.
+		- se contador é maior que 0 -> decrementa o  contador.
+	- Up / release/ post:
+		- incrementa contador.
+		- se são múltiplas tarefas esperando libera só uma.
+		- ordem de liberação depende da implementação.
+- Existem semáforos limitados, testáveis, valores.

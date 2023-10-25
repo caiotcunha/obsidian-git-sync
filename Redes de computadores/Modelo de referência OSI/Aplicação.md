@@ -1,0 +1,1 @@
+- Contém vários protocolos comumente usados por usuários

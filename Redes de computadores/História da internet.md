@@ -1,0 +1,4 @@
+- Iniciou como um projeto de pesquisa
+- Projeto deu início à ARPANET
+- O intuito era criar uma rede de comunicação que fosse completamente distribuída de modo que não fosse possível derruba-la com um único ataque
+- A internet é uma rede de redes

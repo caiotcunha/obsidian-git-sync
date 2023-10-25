@@ -1,0 +1,18 @@
+- Situação em que diversas tarefas concorrentes ficam impossibilitadas de evoluir devido a falta de recursos necessários que estão sendo controladas por outra.
+- Para que aconteça é necessário que o sistema permita:
+	- Exclusão mútua: existem recursos que são garantidos a uma tarefa de forma exclusiva.
+	- Posse e espera: processo aloca os recursos um por um e espera mantendo esses recursos ocupados até conseguir todos os recursos necessários para executar.
+	- Ausência de preempção: não existe forma de o sistema retomar um recurso alocado.
+	- Espera circular: tarefas que precisam dos mesmos recursos esperando uma pela terminação da outra.
+- Para tratar deadlocks podemos usar três aproximações: prevenir, impedir, detectar e corrigir
+	- Prevenção:
+		- Não permitir exclusão mútua -> restringir o controle de um recurso a uma tarefa apenas
+		- Não permitir posse-e-espera -> forçar tarefas a pedir todos os recursos de uma vez, não conseguiu morre
+		- Permitir preempção -> tornar possível forçar uma thread a liberar um recursos
+		- Espera circular -> garantir que a ordem de travamentos não crie ciclos
+		- Não permitir posse e espera e não criar espera circular são viáveis em memória compartilhada
+	- Impedir:
+		- Procuramos nunca deixar o sistema em um estado inseguro
+	- Detecção e recuperação de impasses:
+		- Deixa o sistema correr e resolve se der problema
+		- Periodicamente uma tarefa vigia procura por deadlocks liberando recursos a força

@@ -1,0 +1,2 @@
+- trada da sintaxe e semântida da informação
+-  

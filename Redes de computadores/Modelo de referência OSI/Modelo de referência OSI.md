@@ -1,0 +1,9 @@
+- open systems interconnection da ISO
+- trata interconexão de sistemas abertos
+- aberto no sentido que qualquer sistema que segui os padrões será capaz de se interconectar
+- Princípios aplicados para se chegar as camadas:
+	- Uma camada deve ser criada onde houver necesidade de outro grau de abstração
+	- Cada camada deve executar uma função bem definida
+	- A função de cada camada deve ser escolhida tendo em vista a definição de protocolos padronizados internacionalmente
+	- limites de camadas devem ser escolhidos para minimizar o fluxo de informações pelas interfaces
+- Dividido em 7 camadas: [[Física]], [[Enlace]], [[Rede]], [[transportes]],[[Sessão]], [[Apresentação]] e [[Aplicação]]

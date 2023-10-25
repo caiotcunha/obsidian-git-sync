@@ -1,0 +1,7 @@
+- Abordagem muito conhecida para a solução de problemas
+- Não apenas por meio de software
+- inspiração, ideação, implementação
+- inspiração: Observar e conversar com usuários extremos
+- Ideação: Atividade de geração e teste de ideias, prototipação
+- Implementação: Após decidir um protótipo vencedor parte para implementação
+- 

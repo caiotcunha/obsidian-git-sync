@@ -1,0 +1,6 @@
+- responsável pela operação da sub-rede de comunicação
+- faz o roteamento
+- cantabilidade
+- interconexão de redes diferentes
+- rede é vista como um grafo
+- tabela de roteamento

@@ -1,0 +1,14 @@
+- Unidade de informação é chamada de quadro (frame)
+- Responsável por prover uma linha de transmissão sem erros para a camada de rede
+- trata de quadros recebidos incorretamente, perdidos ou duplicados
+- usa quadros de confirmação
+- alguns protocolos usam piggybacking para confirmação
+- diferentes tipos de serviços podem ser oferecidos
+- normalmente o mecanismo de controle de fluxo é integrado com o controle de erro
+- Redes tipo difusão devem implementar um mecanismos de controle de controle de acesso ao meio 
+## funções e serviços
+- funções:
+	- enquadramento
+	- correção/detecção de erro
+	- controle de fluxo(nem sempre)
+	- controle de acessos ao meio

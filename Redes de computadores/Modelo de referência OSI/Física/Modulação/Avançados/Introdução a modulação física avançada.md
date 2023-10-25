@@ -1,0 +1,8 @@
+- Podemos transmitir mais dados usando uma combinação das modulações básicas
+- Símbolo: é uma das combinações dentre as possíveis de alterações na portadora.
+- Bits por símbolo: quando temos muitas combinações possíveis, um símbolo pode representar mais de um bit
+- forma de passar mais símbolos de uma vez
+- Grey coding: símbolos diferem em apenas um bit para evitar erros
+- sinal multiplexado
+- da para separar os bits c
+- capacidade C= b x f

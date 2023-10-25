@@ -1,0 +1,5 @@
+- Dois tipos de empresas de software:
+	- Projeto: Consultorias,agencias. Trabalham com contrato
+	- Produto: Dirigidas por software, desenvolvimento perpétuo
+- Requisitos: funcionalidades obrigatórias que o software não pode ser feito sem.
+- Hipóteses: mais comum em empresas de produto, deve ser pesquisado para saber se deve ser implementado
