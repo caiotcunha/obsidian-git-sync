@@ -1,0 +1,27 @@
+- Introdução à teste de software
+- temos que fazer testes, pois softwares reais são complexos
+	- o software também evolui para acomodar as mudanças
+- o que é teste de software?
+	- testes manuais/automatizados(foco)
+- Para que fazer teste de software?
+	- relacionado à qualidade do sistema
+	- redução de erros
+- testes automatizados
+	- pequenos programas que chamam os programas que queremos testar
+	- grande vantagem é poder rodar várias vezes
+	- código de teste pode ficar maior que o programa testado
+	- testes devem ajudar a evolução da aplicação e não ser gargalo
+- vantagens
+	- suporte à capacidade de mudança
+	- ajuda na dettecção precoce dos erros
+	- ajuda a melhorar o projeto do sistema
+- frameworks de teste
+	- utilizados para criação de testes automatizados
+	- milhares de opções
+	- vão de mais a menos detalhados
+	- por que devemos utilizar?
+		- facilitam a escrita,execução e geração de relatórios
+- Devemos testar as funcionalidades e não os metodos
+	- método -> passageiro
+	- funcionalidade -> fixa
+- 
