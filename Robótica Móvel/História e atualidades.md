@@ -1,0 +1,21 @@
+- conceito surgiu muito antes
+- impulsionado bastante pelo cinema
+- 1984: William Grey Walter
+	- machina speculatrix (tortoise)
+	- sensores fotocelulas de contato
+	- atuadores: motores e rodas
+	- primeiro veículo autônomo
+- 1968: Stanford Research Institute
+	- Shakey
+	- primeiro robô móvel
+		- pensar e agir
+	- Sensores:
+		- câmera
+		- profundidade
+		- contato
+- 1970: Stanford
+	- stanford cart
+	- teleoperação
+	- seguir linhas usando câmera
+	- sensoriamento 3d
+- Robos com diferentes formas de andar e de interagir com o ambiente

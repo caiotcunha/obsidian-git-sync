@@ -1,0 +1,23 @@
+- comportamento coletivo
+	- comportamento de individuos sob a influência de um impulso comum e coletivo, sendo este impulso resultado da interação social
+	- pode ser espontâneo ou coletivo
+	- Exemplos:
+		- Multidões: grande de número de pessoas que se junta e que reage simultaneamente a um evento ou fenômeno
+		- Tumultos: eclosão de violência
+		- Comportamentos frente a desastres: como pessoas se comportam frente a um desastre
+		- Pânicos Morais: ansiêdade generalizada sobre uma suposta ameaça à ordem moral, que é falsa ou exagerada
+		- Rumores
+		- Histeria coletiva: Medo intenso e generalizado de um perigo falso
+		- Modismos
+		- Movimentos Sociais
+	- pessoas estão interagindo com o meio e entre si. Usuários disseminam informações, pode ser de qualquer forma na internet
+	- podemos usar grafos para modelar essas informações
+- Exemplo:
+	- indificando propagandas eleitorais antes da hora para o ministério público
+		- não só achar os tweets, mas o grupo de pessoas que está engajando de fazendo as propagandas serem impulsionadas
+		- buscar os coordenadores e acionar grupos inteiros
+		- usa grafos para modelar
+		- buscar pessoas que estão sempre engajando num mesmo grupo de tweets
+		- filtrar os tweets interessantes (usando a palavra voto etc)
+		- backbone
+		- detecção de comunidades: mais ligações com usuários dentro da comunidade do que com usuários de fora dela

@@ -1,0 +1,25 @@
+- Modelo base é um grafo
+- Propriedades de um grafo
+	- local mesures
+		- grau do no
+			- se for direcionado grau de entrada e de saída
+		- número total de arestas = soma dos graus de todos os nós divididos por 2 (não direcionado)
+		- total de arestas = soma os graus de saída ou de entrada (direcionado)
+		- da pra pegar o grau médio
+		- da pra fazer distribuição de grau médio
+			- cada modelo se relaciona a uma topologia
+			- 
+	- global mesures
+		- betweenness
+			- para cada par de nós, ver se o nó está entre eles
+			- se é alto é um nó que frequentemente está nos menores caminhos (nó importante)
+			- comunidades se comunicam por nós com betweenness alto
+			- são chaves para a conectividade do grafo
+		- closeness
+			- o quao perto eu estou dos outros
+- Tipos de redes
+	- Redes bipartidas
+		- podem ser divididas em 2 conjuntos disjuntos de forma que cada ponto em um conjunto se liga a um ponto de outro conjunto
+		- podem ser analisados de diferentes perspectivas
+			- fazendo projeção dos diferentes conjuntos para ver quais nós se ligam através dos nós do outro conjunto
+		- 

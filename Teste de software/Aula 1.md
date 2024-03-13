@@ -1,0 +1,23 @@
+- pontuação
+	- 3 provas 20pts
+	- tp 20pts
+	- aula praticas 15pts
+	- seminario 5pts
+- tp é fazer um sistema simples e focar nos testes
+- aulas praticas são assincronas e tem exercicio pra entregar
+
+- teste de software são amplamente aplicados hoje em dia
+- testes de unidade
+	- principios first
+		- fast
+		- independent
+		- repeatable
+		- self-checking
+		- timely (Escritos o quanto antes)
+	- nome dos teste descrevem funcionalidades
+	- nomes devem ser mais descritivos
+	- testes focados (acelerar o entendimento do teste)
+- test smells: representam estruturas e caracteristicas preocupantes no código de testes de unidade que devem ser evitadas
+- cobertura de testes: mede o percentual de comandos de um programa são cobertos por testes
+- teste de mutação: injetar bugs artificiais
+- variações de test double

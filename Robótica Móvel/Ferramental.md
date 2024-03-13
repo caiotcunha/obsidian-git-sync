@@ -1,0 +1,33 @@
+- python/coppeliaSim
+- bibliotecas:
+	- sciPy (Numpy)
+	- matplotlib
+	- shapely/scikit-geometry
+- CoppeliaSim
+	- sucessor do v-rap
+	- simulador de proposito geral
+	- gratuito e openSource
+	- use a versão EDU
+	- simulação de sensores
+	- engines para fisica e dinamica
+	- diferentes formas de controle
+	- grande biblioteca de modelos
+	- construção -> objetos e cena
+		- existem vários objetos
+	- simulação -> calculação de módulos
+		- detector de colisão
+		- calcular distância
+		- cinemática
+		- dinâmica
+	- controle -> mecanismos de controle
+		- local
+			- plugins
+			- add-ons
+			- embedded Scripts
+		- remote
+			- remote api
+			- ros nodes
+			- custom solutions
+		- mecanismos de controle
+	- usar a legacy remoteapi
+	- cliente e servidor(plugin padrao)

@@ -1,0 +1,23 @@
+- contar uma "história" usando imagens
+- fortalecer um argumento
+- O que é visualização de dados?
+	- visualização de informação: representa objetos mais abstratos
+	- visualização científica: ilustra objetos que tem um correspondente físico
+- dado x informação
+-  Existem tecnicas de visualização de dados conhecidas:
+	- timeline
+	- areas empilhadas
+	- pequenos multiplos
+- Relacionamento quantitativo
+	- temporal
+	- ranking
+	- parte-todo
+	- desvio
+	- distribuição
+	- correlação
+	- multivariados
+- Uma tecnica pode combinar vários tipos de relacionamento
+- Memoria é muito limitada e tem papel fundamental na congnição
+	- deve levar em conta quando fazer uma visualização de dados
+- maximize a densidade de dados -> principio de densidade de dados de tufte
+- 
