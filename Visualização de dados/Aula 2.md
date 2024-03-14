@@ -1,0 +1,19 @@
+- Trabalho final
+	- fazer uma ferramenta de visualização de dados
+	- notebook
+	- precisam ser interativas
+	- bibliotecas: plotly,d3
+- Percepção visual
+	- sistema visual humano é um buscador de padrões
+	- juntamos as partes para construir o todo, usando experiências passadas
+	- Ao invés de ler valores individualmente, como em tabelas ou em texto, através de representações visuais dos dados podemos perceber e compreender o todo
+	- representações podem ser para público geral ou treinado
+- padroes conhecidos são rapidamente reconhecidos
+- mantra da visualização: visão geral > zoom > filtro > detalhes em demanda
+- Processamento pré atentivo
+	- coisas que vem antes da atenção consciente
+	- devemos codificar os simbolos de forma a ele serem destacados do seu contexto
+	- vou prestar atenção aos objetos que contrastam
+- Percepção de quantidades pode ser feita de diferentes formas
+	- mas nem todos vão ser precisos
+- 
