@@ -12,4 +12,3 @@
 	- menor valor é 0
 	- max entropia é na distribuição uniforme
 	- a localização não importa para essa formula
-- 
