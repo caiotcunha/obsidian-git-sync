@@ -1,0 +1,45 @@
+- testes de integração
+	- interação entre componentes ou uma funcionalidade completa do sistema de modo separado da interface de usuário
+	- Podem envolver a comunicação com serviços externos, como banco de dados
+- limpeza no caso de uso de dados compartilhado
+- testes de sistema (e2e)
+	- framework básico + algum software de suporte para web
+	- mais lentos, caros e infrequentes
+	- mais frágil -> teste muito mais amplo dificil controlar tudo
+	- depende da interface
+	- mais difícil de saber o que deu errado
+- pirâmide de erros
+- Testes de unidade
+	- verificam automaticamente pequenas unidades do código
+	- melhor pensar em termos de funcionalidades/comportamentos
+	- base da pirâmide -> mais comuns
+	- pequenos,estáveis, simples de escrever e rodam rápidamente
+	- o códio do sistema pode ser dividido em dois grupos
+		- classes de aplicação
+		- conjunto de testes
+	- na prática são implementados usando-se frameworks
+	- Método de teste
+		- deve ser público
+		- não deve ter parâmetros
+		- deve possuir anotação
+	- utilizar métodos de setUp/tearDown
+	- conceitos
+		- teste
+		- fixture: estado do sistema que será testado por um ou mais métodos de teste, garante q o teste é repetível
+		- Casos de teste (test Case): classe com os métodos de teste
+		- Suíte de Testes (Test suite): conjunto de casos de teste
+		- Sistema sob test
+	- Quando escrever o teste?
+		- assim que estiver pronto uma parte ou todo
+		- ou escrever antes mesmo de começar a desenvolver (TDD)
+		- quando o usuário reportar um bug
+		- quando estiver depurando código
+	- Estrutura
+		- AAA: arrange, act, assert
+	- Boas práticas
+		- testes estáveis
+		- teste através de APIs Públicas
+		- teste comportamento e não métodos
+		- teste através de APIs públicas
+			- invoca o sistema da mesma forma que o usuário
+			- Neste caso, mudanças que quebram os testes também podem quebrar o usuário

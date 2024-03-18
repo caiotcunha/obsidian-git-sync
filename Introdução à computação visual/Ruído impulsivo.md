@@ -1,0 +1,4 @@
+- ocorrência aleatória de pixels com valores de luminosidade bem distintos dos vizinhos
+- faz uma janela deslizante e troca o pixel com a mediana dos vivizinhos
+	- joga numa imagem nova pro pixel novo não afetar os calculos
+	- usar a média gera borramento, pois pontos fora da curva afetam muito a conta

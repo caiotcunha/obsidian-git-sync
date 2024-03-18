@@ -1,0 +1,15 @@
+- Mede a quantidade de informação transferida por um canal
+	- mais entropia-> mais incerteza
+	- geração de informação pode ser modelada como problabilístico
+- Imagem pode ser considerada um processo aleatório
+	- cria a probabilidade de um pixel assumir um valor de i, onde i = 0,1,...,Lmax
+	- Distribuição de níveis de intensidade pode ser uma distribuição de probabilidade
+- entropia = 0 -> informação constante
+- entropia quantidade de informação tenho que transmitir por bit
+- 8 bits por pixel é o padrão (monocromáticas)
+- H = -Sum p(i)log(p(i)) de i=0  a Lmax
+	- quando usamos o log na base 2 a unidade é bits
+	- menor valor é 0
+	- max entropia é na distribuição uniforme
+	- a localização não importa para essa formula
+- 
