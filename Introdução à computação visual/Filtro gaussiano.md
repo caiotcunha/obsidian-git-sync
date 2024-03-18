@@ -1,0 +1,7 @@
+- flitro da média ou passa baixa
+- passa uma janela deslizante e substitui o pixel pela média dos pixels na janela
+- gera borramento
+- não resolve as bordas
+- no caso do [[Ruído impulsivo]] ele propaga os erros já que o pixel errado vai ser considerado em mais de uma média
+- quanto maior o tamanho da janela deslizante (máscara) pior o borramento
+- 
