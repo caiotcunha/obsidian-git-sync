@@ -1,0 +1,21 @@
+- referencial geral
+- referencial de cada robo
+- saber fazer a relação entre esses sistemas de coordenadas
+- cada sensor tem seu sistema de coordenadas -> enxerga  de um jeito
+- notação
+	- vetores e matrizes: maiúscula
+	- escalares: minúscula
+	- referênciais: sobrescrito e subscrito antes ou depois
+- representação
+	- posição
+		- vetorn n dimensional (tupla de números reais)
+		- a posição deve conter de maneira explicita em relação a qual sistema está falando
+	- orientação
+	- referêncial
+- corpo rígido: é importante representar a orientação
+	- apenas ponto não da
+	- descrita a partir de um sistema de coordenadas fixo no próprio corpo
+- fazer a projeção de um sistema A para B
+	- matriz de rotação (cossenos diretores)
+	- vetores unitarios de B descritos em termos do sistema A
+	- matriz ortogonal -> inversa = transposta

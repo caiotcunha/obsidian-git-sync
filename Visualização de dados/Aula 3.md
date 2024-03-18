@@ -1,0 +1,34 @@
+- Princípios gestalt
+	- essência ou forma de um objeto
+	- lei da similaridade
+		- mente agrupa elementos similares em entidades coletivas (forma,cores,tamanho ou brilho)
+		- características mais próximas são mais rapidamente associadas
+	- lei do fechamento
+		- tendência a completar o que estamos vendo com nossa experiência
+- Conceitos fundamentais sobres tabelas e gráficos
+	- 3d em geral é adicionar complexidade atoa
+	- unidade de medida
+	- data
+	- assumir que o leitor tem um conhecimento prévio/experiência (fornecer a média)
+	- como se comparam aos outros períodos
+- Afordance?
+- O comprimento é o que a gente estima melhor
+- O propósito do uso de tabelas e gráficos é a comunicação de dados de forma efetiva
+- grafico de pizza é impreciso
+- Fazer a caracterização inicial dos gráficos
+- Relacionamentos envolvendo categorias
+	- nominais: sub-divisões de uma categoria sem ordem intrínseca
+	- Ordinais: subdivisões de uma categoria com ordenação precisa
+	- intervalos: sub-divisões que consistem em uma seria de intervalos sequenciais
+	- hierárquicos: relacionamento que envolve múltiplas categorias que estão relacionadas em diferentes níveis de organização
+- Relacionamentos envolvendo quantidades
+	- Ranking
+	- Razão
+	- Correlação
+- Medidas importantes
+	- média
+	- mediana
+	- moda
+	- percentil
+	- correlação
+		- coeficiente de correlação linear

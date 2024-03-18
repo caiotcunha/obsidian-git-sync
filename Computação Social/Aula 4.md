@@ -1,0 +1,8 @@
+- processos de contágio
+- grafo da as ligações que fazem a difusão
+- cascatas: grafo de propagação
+	- difícil de fazer
+	- resgata informações e tenta ver coisas em comum
+- para espalhar melhor o comportamento deve procurar os nós mais importantes
+- olhar o indivíduo e seus vizinhos: tendencia do individuo a ficar perto de semelhantes
+- seguir a multidão: tendencia a fazer oq todos estão fazendo
