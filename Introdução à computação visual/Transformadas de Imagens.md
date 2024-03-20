@@ -1,0 +1,3 @@
+- Tranformada de fourier
+	- não muda com translação
+	- 

@@ -1,0 +1,12 @@
+- cada linha do A equivale a um filtro
+- gerado por uma equação
+- cada linha do A aumenta um pouco a frequência
+- quer caputar a maior parte dos padroes possíveis
+- reconhecedor de padrões
+- não faz na imagem inteira
+- custo alto
+- resistente à brilho
+- mais fácil comparar coisas depois de filtrar
+- faz com a imagem inteira
+- passa a imagem em cada um dos filtros e gera um pixel
+- 
