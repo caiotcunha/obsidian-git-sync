@@ -1,0 +1,8 @@
+- jeito mais bem estruturado
+- tratar informações de maneira uniforme
+- coordenadas homogêneas
+	- tem fator de escala
+	- coordenadas projetivas
+- representação matricial de transformações afins e projetivas
+- Matrizes de transformação homogênea
+- 
