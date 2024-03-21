@@ -1,0 +1,34 @@
+- tarefa de baixo nível que permite realizar a navegação
+- Interação física entre o robô e o ambiente
+- aereos,terrestres,aquaticos
+	- entre eles tem diferenças
+- escolha do mecanismo depende de várias coisas
+	- complexidade e peso do robô
+	- características do ambiente
+	- velocidade de operação desejada
+	- Limitações no gasto energético
+	- Tipo de movimentação desejada
+- número de pernas ->complexidade
+	- menor número mais difícil equilíbrio
+	- maior número mais difícil controle
+	- estabilidade estática demanda 3 pernas
+- 4 pernas para ter caminhada estática
+- Movimentando uma perna
+	- precisa de pelo menos 2 graus de liberdade
+		- movimentos de levantar e girar
+		- uma direção de movimento sem deslizar
+	- maior parte tem 3 graus de liberdade
+- Em sistemas com várias pernas, é necessário haver algum tipode coordenação para efetivamente se movimentar
+## Robôs com rodas
+- roda mais apropriada depende da aplicação
+- rodas
+	- padrão
+		- 2 DoF
+		- 2 tipos de movimento: motriz e do ponto de contato
+	- Castor
+		- 3 DoF
+		- Rotação em torno do eixo da roda, do ponto de contato e do eixo castor
+	- omnidirecional
+	- esférica
+- mais de 3 rodas precisa de uma suspesão flexível
+- 
