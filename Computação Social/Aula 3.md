@@ -22,4 +22,3 @@
 		- podem ser divididas em 2 conjuntos disjuntos de forma que cada ponto em um conjunto se liga a um ponto de outro conjunto
 		- podem ser analisados de diferentes perspectivas
 			- fazendo projeção dos diferentes conjuntos para ver quais nós se ligam através dos nós do outro conjunto
-		- 
