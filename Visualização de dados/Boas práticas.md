@@ -1,0 +1,5 @@
+- Análise de cada período no seu contexto
+- colocar linhas de referência
+- proporção do gráfico
+- use escalas logarítmicas para a comparação entre taxas
+- 

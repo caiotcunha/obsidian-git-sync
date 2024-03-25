@@ -1,0 +1,13 @@
+- Técnicas:
+	- caixa preta: testes escritos somente com base na interface
+	- caixa branca: considera informações sobre o código a estrutura do sistema sob teste
+- Testes de aceitação: realizados pelo cliente,com dados do cliente, de forma manual
+	- verificação: se o sistema foi feito da forma correta
+	- validação: se o sistema está de acordo com o que o cliente queria
+- Testes Alfa: usuários selecionados para testar semelhante à aceitação
+- Testes Beta: alfa só que maior
+- Testes de requisitos não funcionais: desempenho, usabilidade, falhas, etc
+- Testes de regressão: garante que alterações não introduzam comportamentos inesperados ou novos erros
+- Seleção de daos de teste
+	- classe de equivalência: dividir as entradas de um problema em conjunto de valores que têm a mesma chance de apresentar um bug
+	- 
