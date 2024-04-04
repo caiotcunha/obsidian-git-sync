@@ -1,0 +1,19 @@
+- Objetivo: encontrar uma representação binária que seja menor que a matriz original
+- existe compressão sem perda e com perda
+- ao voltar o pixel pode ou não ter um erro
+- Taxa de compressão: tamOriginal/tamNovo
+- Redundância relativa: Rd = 1-(1/Cr)
+- Categorias
+	- [[Redundância de codificação]]:
+		- baseada na entropia: numero de bits que precisa para cada pixel
+		- entropia da o limite inferior
+		- taxa máxima é 8
+		- sem perda
+	- Redundância interpixel:
+		- faz um predidor e faz a análise da entropia no erro
+		- sem perda / com perda
+	- Redundância psicovisual:
+		- explorada pela transformada do cosseno
+		- joga fora as frequências altas -> olho não percebe
+		- com perda
+	- psicovisual -> interpixel -> codificação (pipeline)

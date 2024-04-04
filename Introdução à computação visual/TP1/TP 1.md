@@ -1,0 +1,6 @@
+- disponível no moodle
+- não precisa de relatório
+- notebook
+- tudo q vai precisar pra descompressão tem estar no arquivo
+- taxa de compressão : h x w/tamanho do arquivo salvo
+- 

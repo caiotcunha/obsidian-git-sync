@@ -1,0 +1,3 @@
+- Decompoe a imagem em um conjunto de coeficientes
+- Coeficientes com pequena magnitude são descartados
+- 

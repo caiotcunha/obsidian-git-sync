@@ -1,0 +1,3 @@
+- Objetivo: Explorar a característica de que pixels vizinhos normalmente possuem alguma relação
+- Exemplo de Representação:
+	- comprimento de corrida

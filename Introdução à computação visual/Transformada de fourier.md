@@ -1,0 +1,6 @@
+- utiliza-se fase e espectro
+- fase - informações sobre a estrutura da imahem
+- espectro - informações sobre as frequências espaciais
+- é simétrica -> redundante
+- resulta em componentes complexos -> tem que salvar os dois
+- 

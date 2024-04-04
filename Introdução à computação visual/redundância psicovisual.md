@@ -1,0 +1,2 @@
+- Objetivo: explorar a imprecisão do sistema visual humano em perceber certos detalhes
+- informações psicovisualmente redundantes podemser removidas sem interferir na percepção da imagem

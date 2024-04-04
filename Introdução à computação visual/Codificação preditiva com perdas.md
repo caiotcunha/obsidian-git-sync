@@ -1,0 +1,4 @@
+- Deve repassar a informaçãp pao preditor para não acumular erro
+- tomar cuidado pra não propagar o erro
+- nao muito utilizado pq a predição não é muito boa
+- perda fica no quantizador

@@ -1,0 +1,2 @@
+- limite inferior é a entropia
+- 

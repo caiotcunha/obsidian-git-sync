@@ -1,0 +1,7 @@
+- objetivo: reduzir o tamanho dos códigos utilizados para representar níveis de cinza contidos na imagem
+- código ótimo: 
+	- Probabilidade de um nível cinza
+		- pi = ni/n (pixels com intensidade i / pixels na imagem)
+	- Número de bits médio por nível
+- coloca menos bit pros que mais tem na imagem
+- usa 10 ao invés de 1 para poder colocar uma arvore

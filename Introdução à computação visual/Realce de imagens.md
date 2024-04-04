@@ -1,0 +1,4 @@
+- tecnicas para acentuar ou melhorar certos pontos da imagem
+- [[Transformação de escala de cinza]]
+- [[Tecnicas de meios-tons]]
+- [[Filtragem de imagens]]

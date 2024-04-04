@@ -1,0 +1,31 @@
+- como que o estado do robô varia no tempo de acordo com as entradas
+- leis de controle -> decidir de qual forma atuar sobre o sistema
+- baixo nível
+	- conceito de manutenção -> manter um estado
+- alto nível
+	- conceito de completude -> alcançar um estado
+- output = controller(input)
+	- input: estado desejado
+	- output: sinal de controle
+- formas gerais de controle
+	- malha aberta
+		- resultado não realimenta o sistema
+		- entrada de controle utilizada independentemente da saída do processo
+		- não sabemos o efeito da ação, não é possível adaptar
+		- várias incertezas associadas
+	- malha fechada
+		- o resultado das ações de controle realimenta o sistema -> podemos ver se o objetivo foi alcançado
+		- temos uma fonte de incerteza no sensor
+		- exemplo simples: controle liga-desliga
+- preciso representar o erro de forma melhor
+	- diferença do estado atual para o objetivo
+	- Kp é o ganho proporcional
+	- o ganho possui grande impacto no desempenho
+- maneiras de determinar o ganho
+	- analítica: Exige um grande entendimento do sistema e uma boa caracterização matemática do comportamento
+	- empírica: tentativa e erro
+	- automática: Ajustando durante a própria execução do sistema
+- oscilações
+	- adicionar um novo termo, reponsável por dissipar energia
+- termo derivativo
+- 
