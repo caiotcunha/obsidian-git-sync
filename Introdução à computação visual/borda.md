@@ -1,0 +1,1 @@
+borda corresponde ao conjunto de pixels no contorno do [[Componentes conexos]].

@@ -1,0 +1,1 @@
+A conectividade entre elementos é um conceito usado para estabelecer limites de objetos e componentes de regiões de imagem. Dos pixels são conexos se são vizinhos e tem o mesmo  tom de cinza.

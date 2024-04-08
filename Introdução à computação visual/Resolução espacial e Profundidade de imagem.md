@@ -1,0 +1,3 @@
+- resolução espacial está associada à densidade de pixels da imagem
+- maior densidade -> maior resolução
+-  L = 2^b sendo L nível de cinza e b profundidade da imagem

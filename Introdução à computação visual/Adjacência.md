@@ -1,0 +1,1 @@
+o elemento f1 é adjacente a f2 se eles forem conexos. Dois subconjuntos de pixels são adjacentes se pelo menos um elemento de algum deles for adjacente a um elemento do outro.

@@ -1,0 +1,1 @@
+caminho de um pixel a outro é uma sequência de pixels distintos adjacentes

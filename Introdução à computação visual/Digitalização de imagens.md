@@ -1,0 +1,12 @@
+- imagem continua vira uma matriz em que cada elemento é um pixel
+- preta 0 255 branca
+- considere um sinal f(x,y) com banda limitada no domínio {-B,B}
+	- a frequência de amostragem , Fa, é a frequência espacial com que as amostras do sinal são tomadas no processo de amostragem e está relacionada com o intervalo  de amostragem delta x , na direção x , pela seguinte equação
+		- Fa  = 1/deltax
+	- a escolha da frequência de amostragem adequada é determinada  pelo teorema de amostragem de whittaker-shannon o qual estabelece que um sinal contínuo pode ser completamente reconstruído  a partir de um conjunto de amostras se:
+		- delta x <= 1/2B
+		- ou Fa >= 2B
+		- a frequência de amostragem deve ser no mínimo duas vezes a frequência máxima do sinal a ser amostrado
+	- alising acontece quando as condições não são satisfeitas, não é possível recuperar corretamente o sinal
+		- altas frequências do sinal digital aparecem como baixa frequência no sinal reconstruído
+- é usual assumir que as dimensões da imagem  e o número de níveis de cinza são potências inteiras de 2. 

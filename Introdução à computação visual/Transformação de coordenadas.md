@@ -1,0 +1,2 @@
+- Resultado depende da combinação linear dos dados da entrada com os coeficientes de transformação
+- cada coeficiente da saída resulta da soma dos coeficientes de entrada ponderados pelos componentes do núcleo da transformada

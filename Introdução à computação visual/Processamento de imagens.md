@@ -1,0 +1,2 @@
+- o processamento digital de imagens consiste em um conjunto de técnicas para capturar, representar e transformar imagens com o auxílio do computador
+- 

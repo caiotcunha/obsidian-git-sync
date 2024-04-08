@@ -1,0 +1,1 @@
+um subconjunto de uma imagem que são conexos entre si é chamado de componente conexo. Dois componentes são conexos se existir um [[Caminho]] entre eles.

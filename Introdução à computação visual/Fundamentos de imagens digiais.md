@@ -1,0 +1,11 @@
+- sinal: é a manifestação de um fenômeno que pode ser expresso de forma quantitativa
+	-  pode ser representado como uma função de uma ou mais variáveis independentes
+	- pode ser contínuo ou discreto
+		-  contínuo: estados podem ser definidos em qualquer instante de tempo
+		- discreto: conjunto de valores discretos cujo intervalo depende da natureza do sinal
+	- pode ser analógico ou digital
+		- digital: discreto
+		- analógico: contínuo
+- imagem: pode ser definida como uma função de intensidade luminosa, denotada f(x,y), cujo valor ou amplitude denotada nas coordenadas espaciais (x,y) fornece a intensidade ou brilho naquele ponto
+- iluminância: quantidade de luz incidente na cena | 0 < i < infinito
+- reflectância: quantidade de luz refletida pelos objetos na cena | 0 < r < 1

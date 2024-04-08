@@ -5,4 +5,7 @@
 	- coordenadas projetivas
 - representação matricial de transformações afins e projetivas
 - Matrizes de transformação homogênea
+	- Também servem para descrever frames
+	- ![[Captura de tela de 2024-03-27 08-18-13.png]]
+- ![[Captura de tela de 2024-03-27 08-15-22.png]]
 - 

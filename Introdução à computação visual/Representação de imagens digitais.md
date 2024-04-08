@@ -1,0 +1,5 @@
+- A representação de imagens digitais se da por matrizes
+	- são simples de fazer e fáceis de manipular e visualizar
+	- no entanto sua estrutura é invariavel espacialmente, não se adapta à possíveis irregularidades que podem acontecer em imagens
+		- compressão ajuda nisso
+- imagens podem ser representadas em múltiplas resolução à partir de um sistema de pirâmide hierárquico

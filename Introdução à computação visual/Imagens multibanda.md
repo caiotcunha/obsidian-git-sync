@@ -1,0 +1,6 @@
+- são imagens em que cada pixel está associado a um fator vetorial nas diferentes bandas do espectro
+- uma imagem colorida é uma imagem multibanda em que cada ponto é definido por:
+	- luminância: brilho da luz
+	- matriz: comprimento de onda dominante
+	- saturação: grau de pureza da matriz
+- 

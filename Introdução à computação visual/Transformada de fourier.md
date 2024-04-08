@@ -1,6 +1,8 @@
 - utiliza-se fase e espectro
-- fase - informações sobre a estrutura da imahem
+- fase - informações sobre a estrutura da imagem
 - espectro - informações sobre as frequências espaciais
 - é simétrica -> redundante
 - resulta em componentes complexos -> tem que salvar os dois
-- 
+- quanto maior a frequência apresentada na função de entrada, o espectro de fourier apresentará componentes em regiões mias distantes da origem
+- invariante quanto à translação
+- variante quanto à rotação
