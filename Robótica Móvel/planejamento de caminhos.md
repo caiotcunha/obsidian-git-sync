@@ -1,0 +1,13 @@
+- Planejamento de movimento: uso de métodos computacionais para gerar o movimento de um robô para realizar uma tarefa específica.
+- Caminho: conjunto de configurações em uma ordem específica sem considerar o tempo em que as configurações serão alcançadas
+- Trajetória: conjunto de configurações em ordem específica considerando o momento (tempo) em que cada uma deveria ser atingida
+- Um caminho realizável é uma curva contínua noespaço de configurações e não viola nenhuma restrição
+- Uma solução aceitável é um caminho viável começando na configuração inicial e terminando na configuração objetivo
+- Se um critério de otimização for fornecido, a solução deve ser ótima (minimizar uma função de custo)
+- Características/propriedades dos algoritmos
+	- Completude
+		- Garantia de encontrar solução em tempo finito se existir
+	- Eficácia
+		- Qualidade do caminho encontrado dado um critério de otimização
+	- Complexidade
+		- Eficiência (uso de recursos) para se calcular a solução

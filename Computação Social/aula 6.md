@@ -1,0 +1,12 @@
+- Real network proprierties
+	- diametro pequeno -> mundo pequeno
+	- formação de triângulos dentro da rede
+	- alto grau de clusterização
+- o número de conexões depende de características do próprio nó
+- modelo probabilístico
+	- mundo pequeno
+	- não tem clusterização
+- modelo mundo pequeno
+	- diametro pequeno
+	- alto grau de clusterização
+- 

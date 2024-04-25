@@ -3,4 +3,3 @@
 - quais são as entradas de controle para que eu alcance o objetivo
 - Como resolver esse problema em malha aberta?
 	- decidir o caminho e segmentar em trechos
-- 
