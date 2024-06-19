@@ -1,3 +1,1 @@
-# obsidian-git-sync
-
-funciona?
+Um repositório no qual centram-se as minhas anotações durante o curso de ciências da computação na ufmg.
