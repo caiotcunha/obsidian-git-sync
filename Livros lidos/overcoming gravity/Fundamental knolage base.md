@@ -1,4 +1,4 @@
-- página parada **
+- página parada *36*
 
 Correctly applied bodyweight exercises are comparable to weights for strength and hypertrophy in the upper body. On the other hand, bodyweight exercises are slightly inferior to weights for strength and hypertrophy in the lower body. This is another key concept to keep in mind when assessing and constructing a routine toward your goals.
 
@@ -33,7 +33,13 @@ Muscles are strongest in their resting lenght. The phenomenon of placing muscles
 The repetition continuum has strength in one side and endurance in the other. The strength side is attained through low repetitions and heavier weight or higher intensity where 1 RM elicits the most strength. Endurance occurs with less weight or less intensity and more repetitions.
 Important takes:
 - strength and endurance cannot be both optimally developed at the same time.But you can train both at the same time if you want.
-- 
+- developing maximal strength increases the potential for maximum endurance.
+- strength take longer to develop then endurance and conditioning
+
+In general if you are going to cross-train strength and endurance, but have a focus on one portion over another an 80/20 split  tends to work very well. *I want to focus on strength, so I'm planning on this split.*
+Training like this is more beneficial then 100% focus on one train.
+
+
 
 
 
