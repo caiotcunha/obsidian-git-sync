@@ -1,4 +1,4 @@
-- página parada *36*
+- página parada *56* 
 
 Correctly applied bodyweight exercises are comparable to weights for strength and hypertrophy in the upper body. On the other hand, bodyweight exercises are slightly inferior to weights for strength and hypertrophy in the lower body. This is another key concept to keep in mind when assessing and constructing a routine toward your goals.
 
