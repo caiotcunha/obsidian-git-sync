@@ -1,0 +1,12 @@
+- cinemática direta -> Geometria
+- cinemática inversa -> Controle
+- quais são as entradas de controle para que eu alcance o objetivo
+- Como resolver esse problema em malha aberta?
+	- decidir o caminho e segmentar em trechos
+- Não é possível para o robô móvel medir exatamente sua posição
+- Espaço de configurações são todas as configurações que o robô pode ter
+- velocidades atuáveis não necessariamente é igual aos graus de liberdade
+	- Velocidades atuáveis < Dof -> não holonômico
+	- Velocidades atuáveis = Dof -> holonômico
+	- Velocidades atuáveis > Dof -> redundante
+- 

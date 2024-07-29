@@ -1,4 +1,4 @@
-- como que o estado do robô varia no tempo de acordo com as entradas
+ - como que o estado do robô varia no tempo de acordo com as entradas
 - leis de controle -> decidir de qual forma atuar sobre o sistema
 - baixo nível
 	- conceito de manutenção -> manter um estado
@@ -26,6 +26,6 @@
 	- empírica: tentativa e erro
 	- automática: Ajustando durante a própria execução do sistema
 - oscilações
-	- adicionar um novo termo, reponsável por dissipar energia
+	- adicionar um novo termo, responsável por dissipar energia
 - termo derivativo
 - 

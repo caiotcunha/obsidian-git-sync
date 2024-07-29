@@ -1,0 +1,5 @@
+- Podem ser realizadas no domínio de imagem ou frequência
+- redundancia de codificação: pixels mais frequentes devem ter representações menores para diminuir o número de bit utilizados
+- redundancia interpixel: explora o fato de que pixels proximos geralmente possuem o mesmo tom
+	- codificação por comprimento de corrida
+- redundância psicovisual: olhos ão conseguem distinguir tons de cinza tao bem então podemos cortalos sem afetar a imagem

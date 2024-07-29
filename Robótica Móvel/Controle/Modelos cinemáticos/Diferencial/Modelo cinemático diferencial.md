@@ -1,0 +1,10 @@
+- Assumimos que não existem deslizamento
+- Ponto de cruzamento entre todos os eixos ICR
+- Mecanismo mais simples de movimentação:
+	- duas rodas motrizes paralelas e alinhadas
+	- Resultado das velocidades relativas das rodas
+	- pequenos erros geram diferentes caminhos
+- Sistema de coordenadas sobre o eixo que alinha as rodas e bem no meio desse eixo
+- modelo uniciclo:
+- Restrição não holonômica
+- 

@@ -1,0 +1,9 @@
+- o objetivo das transformações de contraste é melhorar a qualidade das imagens sob critérios subjetivos ao sistema visual humano, tornando mais fácil a percepção de informações contidas na imagem
+- o valor de a na transfomração linear define se comprimi ou expande
+	- menor q um comprime
+- funções de mapeamento não-lineares
+	- logaritmica: realce nos pixels de baixa intensidade, ou seja, regiões escuras da imagem
+		- tomar cuidado com o 0
+	- raiz quadrada: semelhante à do logaritmo mas aumenta o contraste de baixa e media intensidade
+	- exponencial: Realce maior nos pixels de alta intensidade
+	- quadrado: realça media e alta intensidade

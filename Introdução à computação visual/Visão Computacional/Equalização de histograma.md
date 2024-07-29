@@ -1,0 +1,4 @@
+- Transformar a imagem para que seu histograma seja mais uniforme
+- função de distribuição acumulada de probabilidade
+- calcula a probabilidade de cada nivel de cinza aparecer na imagem
+	-  vai somando com o anterior e arredondando

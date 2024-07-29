@@ -1,0 +1,10 @@
+- Técnica que emprega padrões formados por pontos pretos e brancos para reduzir o número de níveis de cinza de uma imagem
+- utilizada na impressão de imagens em jornais e revistas onde apenas os níveis preto e branco eram necessários
+- imprime em cada unidade de resolução um círculo de tinta cujo tamanho é inversamente proporcional à intensidade da imagem na unidade de resolução
+- Pontilhado ordenado
+	- os valores das células padrão podem ser utilizados como limiares
+	- se o valor normalizado intervalo{0..9} do pixel form menor que o valor do padrão o pixel é substituído pelo valor preto, caso contrário é branco
+	- transforma um pixel em um padrão maior
+- Pontilhado com difusão de erro
+	- procuram distribuir a diferença entre o valor exato de cada pixel e seu valor aproximado a um conjunto de pixels subjacentes
+	- 

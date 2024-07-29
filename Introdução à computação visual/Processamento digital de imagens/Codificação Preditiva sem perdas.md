@@ -4,4 +4,6 @@
 - trunca antes de passar para o huffman
 	- evita float na arvore
 		- gera overhead na arvore
+- explora a redundância inter-pixel
+- 
 	

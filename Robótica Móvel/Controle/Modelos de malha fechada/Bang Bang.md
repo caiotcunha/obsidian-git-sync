@@ -1,0 +1,7 @@
+- Controle de malha fechada mais simples
+- Sensor mede diretamente a variável de estado desejada
+- Atuador que pode aumentar ou diminuir a variável de estado
+- estratégia:
+	- liga/desliga dependendo de se está no estado ou nao
+	- gera oscilação no objetivo
+- 
