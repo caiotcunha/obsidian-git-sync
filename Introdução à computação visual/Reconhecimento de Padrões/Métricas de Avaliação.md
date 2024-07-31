@@ -1,0 +1,16 @@
+- Deve-se separar conjunto treino e teste
+- overfitting:
+	- Acontece quando os parâmetros estimados pelo classificador não apresentam bons resultados quando aplicado em um conjunto de teste
+	- pode acontecer por poucas amostras ou muitos parâmetros
+- Validação cruzada
+	- Particionamento do conjunto de treinamento em treinamento e validação
+		- Parâmetros estimados no treinamento
+		- Conjunto de validação é utilizado para verificar a generalização do classificador
+- k-folds
+	- conjunto de treinamento é dividido em k partes iguais com n/k elementos
+	- k-1 partes são usadas para o treinamento e a parte restante para validação
+	- processo repetido k vezes
+	- estimativa do erro do classificador é dada pela média de cada execução
+- Métricas:
+	- Revocação: taxa de positivos classificados corretamente
+	- Precisão: proporção de classificados como positivos que são de fato positivos

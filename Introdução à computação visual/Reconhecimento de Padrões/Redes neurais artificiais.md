@@ -1,0 +1,13 @@
+Multilayer Perceptron
+- Arquiteturas
+	- Feed-forward Neural Networks
+		- mais comum
+		- primeira camada é o input e a última o output
+		- um ou mais hidden layers
+		- A ativação de cada neuronio em cada camada é uma função nao linear das ativações da camada anterior
+	- Recurrent networks
+		- possuem ciclos direcionados no gráfico de conexão
+		- difíceis de treinar
+		- mais biologicamente realísticas
+- O output de uma camada é o input da próxima
+- Uma função de custo é utilizada para avaliar a rede
