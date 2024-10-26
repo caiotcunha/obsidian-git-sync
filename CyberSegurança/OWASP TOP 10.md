@@ -12,4 +12,8 @@ A Open Web Application Security Project é uma organização sem fins lucrativos
 4. Insecure Design: refere-se a vulnerabilidades que são inerentes à arquitetura da aplicação. A melhor forma de impedir que isso aconteça é seguir um desenvolvimento que possua ciclos de desenvolvimento de segurança (SSDLC).
 5. Security Misconfiguration: O software foi configurado de maneira errada deixando brechas de segurança.
 6. Vulnerable and Outdated Components: Componentes (ou versões de componentes) com vulnerabilidades conhecidas. Existem softwares que podem ajudar na busca por essas vulnerabilidades. Existem sites com exploits para vulnerabilidades conhecidas.
-7. Identification and Authentication Failures:
+7. Identification and Authentication Failures: Autenticação e identificação são usados para quase todas as aplicações web. Se um atacante conseguir achar falhas no mecanismo de autenticação ele pode ganhar acesso à conta do usuário. Credenciais e cookies de sessão fracos são vulneráveis a ataques.
+8. Software and Data Integrity Failures: Integridade é a capacidade de certificar que um dado permanece original. Aplicações baixadas da web geralmente possuem um hash que pode ser comparado para garantir a integridade do programa.
+	1. Para o caso de software podemos usar Subresource Integrity (SRI) para comparar os hashs.
+9. Security Loggin and Monitoring Failures: Cada ação do usuário deve ser impressa em algum lugar. É importante ter esse controle para, no caso de um ataque, poder determinar o tamanho do dano e medidas para combater. Importante para saber se o atacante ainda tem acesso à rede. 
+10. Server-Side Request Forgery (SSRF): Ocorre quando um atacante força a aplicação web a mandar requisições para lugares arbitrários enquanto mantém controle do conteúdo delas. Geralmente relacionado a aplicações web que usam serviços terceirizados.
