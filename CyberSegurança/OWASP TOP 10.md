@@ -1,6 +1,9 @@
 A Open Web Application Security Project é uma organização sem fins lucrativos focada em entender as tecnologias web e as formas comuns de invasão. Ela provê recursos e ferramentas para melhorar a segurança de software
 
 1. Broken Access Control: Usuários com diferentes permissões devem poder acessar coisas diferentes. Essa vulnerabilidade é relacionada a passar por uma autorização sem poder. Geralmente acontece através de IDOR (Insecure Direct Object Reference), quando o programador expõe inadequadamente um objeto.
+	1. podem ser categorizados em dois tipos:
+		1. Horizontal Privilege Escalation: Ocorre quando um usuário pode fazer uma ação ou acessar dados de outro com as mesmas permissões.
+		2. Vertical Privilege Escalation: Ocorre quando um usuário pode fazer uma ação ou acessar dados de outro com maiores permissões.
 2. Criptographic Failure: Falta ou uso inadequado da criptografia. Sem a criptografia para dados em movimento, o sistema fica vulneravel a ataques do tipo "man in the middle". Também é necessário criptografar os dados em repouso para evitar possíveis ataques.
 	1. É comum dados serem armazenados em databases ou em flat-file (programas menores)
 3. Injection: A aplicação interpreta um input digitado pelo usuário como comando ou parâmetro. Esse ataque depende muito de qual tecnologia é utilizada e como o programa interpreta o input.
