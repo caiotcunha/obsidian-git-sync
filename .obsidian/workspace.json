@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "teste/testestestste.md",
+                "file": "Livros lidos/overcoming gravity/Passos.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "teste/testestestste.md",
+                "file": "Livros lidos/overcoming gravity/Passos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "teste/testestestste.md",
+                "file": "Livros lidos/overcoming gravity/Passos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "teste/testestestste.md"
+                "file": "Livros lidos/overcoming gravity/Passos.md"
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "2964745624c1fae5",
+  "active": "c088bc966520845b",
   "lastOpenFiles": [
+    "Livros lidos/overcoming gravity/Passos.md",
     "Sem título"
   ]
 }
