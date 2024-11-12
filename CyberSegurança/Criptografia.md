@@ -1,0 +1,3 @@
+## Hash Function
+São diferentes de criptografar, não tem chave e são feitas para serem quase impossíveis de ir do output de volta para o input. Um algoritmo de hash vai ser relativamente rápido para computar. O output de uma função hash são bytes puros, que estão codificados. Codificações comuns são base64 ou hexadecimal. Decodificar não vai trazer nada útil.
+Hash é usado frequentemente em ciberssegurança. Geralmente usado para verificar senhas.

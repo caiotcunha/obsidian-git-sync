@@ -43,7 +43,7 @@ Recomendar itens similares à itens consumidos pelo usuário alvo. Segue os mesm
 Em geral, O(n²m) sendo m usuários e n itens. O problema é m e n da ordem de 10⁷.
 
 ## Escolha entre os tipos
-Para se escolher entre os dois tipos de algoritmos é necessário levar em conta as demandas específicas do sistema em algumas areas como:
+Para se escolher entre os dois tipos de algoritmos é necessário levar em conta as demandas específicas do sistema em algumas áreas como:
 - Acurácia: Esse aspecto depende da razão entre número de usuários e o número de itens no sistema. Em geral, um pequeno número de vizinhos de alta confiança é de longe preferível a muitos vizinhos de baixa confiança. No caso de sistemas de grande sucesso, ou seja, com um número de usuários muito maior do que o de itens, a abordagem de itens pode produzir uma recomendação mais acurada. Ao contrário sistemas com menos usuários que itens (ex: recomendação de artigos) se beneficiam mais de uma abordagem baseada em usuários
 - Eficiência: Esse aspecto depende da razão entre número de usuários e o número de itens no sistema. Sistemas com mais usuários tornam a abordagem baseada em itens mais eficiênte, dado o menor custo para computar as similaridades.
 - Estabilidade: A escolha entre uma abordagem baseada em itens ou usuários depende da frequência das mudanças nos itens e nos usuários do sistema. Em um sistema em que a lista de itens é relativamente estável a abordagem por itens é preferível, já que as similaridades podem ser computadas de maneira offline de maneira infrequente.

@@ -2,4 +2,4 @@
 2. checar usuário: whoami
 3. enumeração de portas: nmap -sT(tipo de scam) -p-(faz pra todas)
 4. curl -I |site| para informações sobre o site, como versão do php
-5. 
+5. sudo -l -> vê os comandos que você pode executar
