@@ -1,0 +1,1 @@
+o ponto e vírgula é empregado para separar orações independentes que guardam alguma relação

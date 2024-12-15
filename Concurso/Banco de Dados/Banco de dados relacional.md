@@ -1,0 +1,1 @@
+Na modelagem de dados, uma **chave estrangeira** é um campo em uma tabela que faz referência à chave primária de outra tabela. A principal função da chave estrangeira é manter a integridade referencial entre duas tabelas, garantindo que o valor contido no campo da chave estrangeira corresponda sempre a um valor existente na tabela referenciada.

@@ -1,0 +1,7 @@
+um switch opera na **camada de enlace** do modelo OSI, também conhecida como camada 2. Sua função principal é conectar dispositivos dentro de uma mesma rede local (LAN) e encaminhar dados de forma eficiente.
+
+O roteador interliga redes LAN, atuando nas camadas 1, 2 e 3 do modelo de referência TCP/IP, interpretando o endereço IP contido no pacote de dados, consultando a sua tabela de roteamento e enviando esse pacote para a porta específica.
+
+Uma **bridge**, por outro lado, é um dispositivo mais inteligente que opera na camada de enlace de dados do modelo OSI. Ela segmenta a rede em domínios de colisão menores, permitindo que dados sejam transmitidos de maneira mais eficiente. A bridge aprende os endereços MAC dos dispositivos conectados em cada uma de suas portas e encaminha os dados somente para a porta correta. Isso reduz o tráfego desnecessário e evita colisões, melhorando significativamente o desempenho da rede.
+
+Um **hub** é um dispositivo simples de rede que conecta vários computadores em uma rede local. Ele opera na camada física do modelo OSI e simplesmente retransmite os dados que recebe para todas as portas, exceto aquela de onde veio o dado. Isso significa que todos os dispositivos conectados ao hub dividem a mesma largura de banda e, consequentemente, o mesmo domínio de colisão. Portanto, se dois dispositivos tentarem enviar dados ao mesmo tempo, ocorrerá uma colisão, o que impacta negativamente o desempenho da rede.

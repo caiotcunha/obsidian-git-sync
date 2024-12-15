@@ -1,4 +1,6 @@
 ## Basics
+cd ~/src/john/run
+
 ./john --wordlist=(path to wordlist) (path to file)
 
 Para formatos específicos
@@ -17,3 +19,4 @@ o formato é nt no john
 
 unshadow (path to passwd) (path to shadow) > destin.txt
 
+l

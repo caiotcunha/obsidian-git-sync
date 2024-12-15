@@ -59,3 +59,6 @@ A principal característica de um algoritmo SHA é que ele é **determinístico*
     - Introduzido em 2015, SHA-3 não é uma continuação do SHA-2, mas sim uma **família independente de funções hash**.
     - SHA-3 foi projetado para ser mais resistente a certos tipos de ataques e melhorar a resistência à colisão.
     - Embora o SHA-2 seja ainda amplamente utilizado, o SHA-3 está sendo adotado em novas implementações de segurança.
+
+
+

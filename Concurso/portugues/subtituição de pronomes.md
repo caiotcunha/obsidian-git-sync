@@ -1,0 +1,7 @@
+- **DE QUE=** Do qual, da qual, das quais, dos quais;
+- **EM QUE=** No qual, na qual, nos quais, nas quais;
+- **POR QUE=** Pelo qual , pelos quais;
+- **A QUE**= Ao qual, às quais, à qual;
+- **QUE=** O que, os quais, a qual, as quais;
+- **ONDE=** pede a preposição "em" = em que, na qual;
+- **Aonde=** Pede a preposição "a" = a qual, as quais.
