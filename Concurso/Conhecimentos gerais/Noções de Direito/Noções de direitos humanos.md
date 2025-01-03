@@ -9,7 +9,7 @@ Fundamento da proteção dos direitos humanos
 2. Jusnaturalistas: o fundamento da proteção dos direitos humanos está em normas superiores e anteriores ao direito positivo
 3. Positivistas: tem que respeitar porque foram reconhecidos e estão previstos em textos legais
 4. Fundamento moral: os direitos humanos devem ser protegidos porque se baseiam nos valores aceitos pela coletividade humana
-    
+
 Direitos humanos, direito humanitário e direito dos refugiados
 
 Direito internacional dos direito humanos: protege o ser humano em situação “genérica” em todos os aspectos. Inclui a proteção dos direitos civis, políticos, sociais, econômicos e culturais, bem como convenções gerais e específicas de proteção.

@@ -1,0 +1,2 @@
+
+**Conceito**: Computação em nuvem é o fornecimento de serviços de computação, incluindo servidores, armazenamento, banco de dados, rede, software, etc pela internet para oferecer inovações mais rápidas, recursos flexíveis e economias de escala.
