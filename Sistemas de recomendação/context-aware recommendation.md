@@ -12,7 +12,6 @@
 	- Ações do usuário influenciam e modificam o contexto.
 
 ## **Implicações da Visão Representacional**
-
 - **Variáveis contextuais:** Precisam ser definidas **a priori**.
     - **Desafio:** Determinar quais contextos são relevantes (**problema de qualificação**).
 - **Variáveis estáticas:** Difícil determinar **quando** cada contexto é aplicável.
