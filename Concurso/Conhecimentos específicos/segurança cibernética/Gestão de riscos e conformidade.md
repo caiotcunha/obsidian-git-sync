@@ -28,6 +28,11 @@ Possui as seguintes etapas:
 
 # Frameworks de cibersegurança
 
-  
+NIST Cybersecurity Framework (CSF): Esse framework é uma ferramenta de referência para a gestão de riscos de segurança cibernética, consistindo em cinco funções principais: Identificar, Proteger, Detectar, Responder e Recuperar.
 
-NIST Cybersecurity Framework (CSF): Esse framework é uma ferramenta de referência para a gestão de riscos de segurança cibernética, consistindo em cinco funções principais: Identificar, Proteger, Detectar, Responder e Recuperar.**
+
+# Inteligência de ameaças
+
+A camada de **inteligência estratégica de ameaças** se refere a uma visão ampla das ameaças, focando em tendências, padrões e grandes movimentos no cenário de segurança. Esta camada é utilizada para informar e orientar decisões de longo prazo e políticas de segurança em nível organizacional. Ela não se concentra em detalhes específicos sobre metodologias, ferramentas e tecnologias dos atacantes.
+
+Já as camadas de **inteligência tática** e **inteligência operacional** são as que geralmente lidam com esses detalhes específicos. A **inteligência tática** envolve informações sobre as técnicas, táticas e procedimentos (TTPs) dos atacantes, enquanto a **inteligência operacional** foca mais em incidentes específicos e detalhes técnicos de ataques em andamento.
