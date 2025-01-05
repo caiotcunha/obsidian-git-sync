@@ -9,3 +9,5 @@ Nas estruturas "MAIS DE UM, CERCA DE UM, PERTO DE UM, CADA UM", o verbo ficará 
 
 Se o sujeito é oracional o verbo da oração principal fica sempre no singular.
 
+Crônica ->  tem fato do cotidiano
+

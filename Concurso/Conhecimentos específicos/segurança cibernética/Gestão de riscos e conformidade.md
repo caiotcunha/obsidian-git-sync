@@ -28,8 +28,30 @@ Possui as seguintes etapas:
 
 # Frameworks de cibersegurança
 
-NIST Cybersecurity Framework (CSF): Esse framework é uma ferramenta de referência para a gestão de riscos de segurança cibernética, consistindo em cinco funções principais: Identificar, Proteger, Detectar, Responder e Recuperar.
+## NIST Cybersecurity Framework (CSF)
 
+Esse framework é uma ferramenta de referência para a gestão de riscos de segurança cibernética, consistindo em cinco funções principais: Identificar, Proteger, Detectar, Responder e Recuperar.
+- identificar: A função de identificação inclui categorias como gerenciamento de ativos, ambiente de negócios, governança, avaliação de riscos, estratégia de gerenciamento de riscos e gerenciamento de riscos da cadeia de suprimentos.
+- Proteger: a função de proteção abrange grande parte dos controles de segurança técnica e física para desenvolver e implementar salvaguardas apropriadas e proteger a infraestrutura crítica. Essas categorias são Gerenciamento de identidade e controle de acesso, Conscientização e treinamento, Segurança de dados, Processos e procedimentos de proteção de informações, Manutenção e Tecnologia de proteção.
+- Detectar: a função de detecção implementa medidas que alertam uma organização sobre ataques cibernéticos. As categorias de detecção incluem anomalias e eventos, monitoramento contínuo de segurança e processos de detecção.
+- Responder: as categorias de funções de resposta garantem a resposta adequada a ataques cibernéticos e outros eventos de segurança cibernética. As categorias específicas incluem Planejamento de resposta, Comunicações, Análise, Mitigação e Melhorias.
+- Recuperar: as atividades de recuperação implementam planos de resiliência cibernética e garantem a continuidade dos negócios em caso de ataque cibernético, violação de segurança ou outro evento de segurança cibernética. As funções de recuperação são melhorias de planejamento de recuperação e comunicações.
+
+### Níveis de implementação
+- **Nível 1 - Parcial:** a organização está familiarizada com o NIST CSF e pode ter implementado alguns aspectos de controle em algumas áreas da infraestrutura. A implementação de atividades e protocolos de segurança cibernética foi reativa versus planejada. A organização tem consciência limitada dos riscos de segurança cibernética e carece de processos e recursos para permitir a segurança da informação.
+- **Nível 2 - Risco informado:** a organização está mais ciente dos riscos de segurança cibernética e compartilha informações informalmente. Falta um processo de  gerenciamento de  riscos  de segurança cibernética planejado, repetível e proativo em toda a organização.
+- **Nível 3 - Repetido:** a organização e seus executivos seniores estão cientes dos riscos de segurança cibernética. Eles implementaram um plano repetido de gerenciamento de riscos de segurança cibernética em toda a organização. A equipe de segurança cibernética criou um plano de ação para monitorar e responder de forma eficaz aos ataques cibernéticos.
+- **Nível 4 - Adaptativo:** a organização agora é resiliente cibernética e usa lições aprendidas e indicadores preditivos para evitar ataques cibernéticos. A equipe de segurança cibernética melhora e aprimora continuamente as tecnologias e práticas de segurança cibernética da organização e se adapta às mudanças nas ameaças de maneira rápida e eficiente. Existe uma abordagem em toda a organização para o gerenciamento de riscos de segurança de informações como tomada de decisões, políticas, procedimentos e processos informados sobre riscos. As organizações adaptáveis incorporam o gerenciamento de riscos de segurança cibernética nas decisões orçamentárias e na cultura organizacional.
+
+### Programa de gerenciamento de riscos de segurança cibernética do NIST Framework
+
+1. **Priorizar e definir rescopo:** crie uma ideia clara sobre o escopo do projeto e identifique as prioridades. Estabeleça os objetivos de negócios ou missão de alto nível, as necessidades de negócios e determine a tolerância ao risco da organização. 
+2. **Orientar:** faça um balanço dos ativos e sistemas da organização e identifique os regulamentos aplicáveis, a abordagem de risco e as ameaças às quais a organização pode estar exposta.  
+3. **Criar um perfil atual:** um _perfil atual_ é uma captura instantânea de como a organização está gerenciando o risco no momento, conforme definido pelas categorias e subcategorias do CSF.  
+4. **Conduzir uma avaliação de risco:** avalie o ambiente operacional, riscos emergentes e informações sobre ameaças à segurança cibernética para determinar a probabilidade e a gravidade de um evento de segurança cibernética que pode afetar a organização.  
+5. **Criar um perfil de destino:** um _perfil de destino_ representa o objetivo de gerenciamento de riscos da equipe de segurança de informações.  
+6. **Determine, analise e priorize lacunas:** ao identificar as lacunas entre o perfil atual e o de destino, a equipe de segurança de informações pode criar um plano de ação, incluindo marcos mensuráveis e recursos (pessoas, orçamento, tempo) necessários para preencher essas lacunas.  
+7. **Implementar plano de ação:** implemente o plano de ação definido na Etapa 6.
 
 # Inteligência de ameaças
 
