@@ -1,0 +1,3 @@
+
+# Yara
+A regra YARA é utilizada para encontrar e classificar amostras de Malware a partir de características que podemos definir através de: binários, hashs, padrões hexadecimais, clean text, base64, entre outros. Depois da criação você terá diversas formas de executar esta regra, seja simplesmente procurando um padrão de texto único ou também criando condições com regras regex para que dê match no que realmente é malicioso. A sintaxe das regras se assemelha à linguagem C.
