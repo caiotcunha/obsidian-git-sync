@@ -9,7 +9,11 @@
 - **ICMP (Internet Control Message Protocol):** é um protocolo que os dispositivos de uma rede usam para comunicar problemas com a transmissão de dados. É um protocolo da camada de rede na arquitetura TCP/IP
 - **TLS (Transport Layer Security):** Esse protocolo foi criado para aumentar a privacidade e a segurança dos dados em comunicações pela internet. Todo site que usa https usa criptografia TLS. O protocolo tem 3 funções principais: Criptografia, autenticação e integridade. Para usar o TLS o servidor de origem tem que possuir um certificado TLS. No modelo tcp/ip o TLS atua na camada de transporte.
 - **IMAP (Internet Message Access Protocol):** é um protocolo usado por clientes de e-mail para acessar mensagens em um servidor de correio, e sua porta padrão é a 143.
-- SMTP (Simple Mail Transfer Protocol): é um protocolo padrão de envio de mensagens de correio eletrônico através da Internet. Atual na camada de apresentação.
+- **SMTP (Simple Mail Transfer Protocol):** é um protocolo padrão de envio de mensagens de correio eletrônico através da Internet. Atual na camada de apresentação.
+- **IPsec (Internet Protocol Security):** é um conjunto de protocolos desenvolvidos para garantir a segurança das comunicações a partir do protocolo IP, proporcionando integridade, autenticação e criptografia dos dados. IPsec opera em dois modos principais: Modo de Transporte e Modo de Túnel.
+	- **No modo de transporte:** o cabeçalho IP original é mantido e a segurança é aplicada ao payload (dados) do pacote IP. Ou seja, o cabeçalho IP original não é alterado, mas os dados (payload) são criptografados e um novo cabeçalho do protocolo AH (Authentication Header) ou ESP (Encapsulating Security Payload) é adicionado. Este modo é geralmente usado para comunicação de host a host.
+	- **No modo túnel:** um novo cabeçalho IP é adicionado fora do cabeçalho IP original. Este novo cabeçalho IP é utilizado para rotear o pacote ao destino final, encapsulando o pacote original completo (incluindo o cabeçalho IP original) dentro do pacote IPsec. Este modo é amplamente utilizado para comunicação entre gateways (roteadores, firewalls) e VPNs, pois permite encapsular pacotes IP inteiros.
+- **HTTPS:** é um protocolo de comunicação da Internet que protege a integridade e a confidencialidade dos dados durante a interação entre o computador do usuário e o site acessado. Atua na camada de aplicação.
 
 
 
@@ -26,6 +30,8 @@ Tipos de firewall:
 
 Regras de firewall podem ser feitas utilizando os componentes básicos de um pacote: endereço de destino, endereço da fonte, porta, protocolo, ação, direção. Essas regras criam uma lista de conexões e interações permitidas.
 
+O uso de firewall UTM (unified threat management) é uma das principais soluções para evitar ataques de flood e de vírus.
+
 ## IDS
 
 Intrusion Detection System. Monitora as atividades do sistema em busca de atividades suspeitas. Ao encontrar alerta os administradores da rede.
@@ -39,7 +45,12 @@ Intrusion Detection System. Monitora as atividades do sistema em busca de ativid
 - Anomaly-Based IDS: Aprende o comportamento normal da rede/sistema e detecta se existe algum desvio do comportamento normal. Geralmente gera muitos falsos positivos.
 - Hybrid IDS: Combina os dois métodos.
 
-### Segmentação de rede
+## IPS
+Um sistema de prevenção de intrusão (IPS) monitora o tráfego da rede em busca de possíveis ameaças e as bloqueia automaticamente, alertando a equipe de segurança, terminando conexões perigosas, removendo conteúdo malicioso ou acionando outros dispositivos de segurança. IPS filtra pacotes. 
+
+
+
+## Segmentação de rede
 Dividir uma rede em seções menores e isoladas. Podem ser divididas por meio de hardware físico ou software.
 
 - Segmentação física (baseada em perímetro): A segmentação física requer dispositivos de hardware — como, por exemplo, [roteadores](https://www.cloudflare.com/learning/network-layer/what-is-a-router/), [comutadores](https://www.cloudflare.com/learning/network-layer/what-is-a-network-switch/) e [firewalls](https://www.cloudflare.com/learning/security/what-is-a-firewall/) — para separar uma rede em seções distintas. Esses dispositivos controlam o tipo de tráfego que tem permissão para entrar e sair de cada seção por meio das políticas de segmentação, que podem ser configuradas de acordo com critérios específicos (como, por exemplo, origem do tráfego, destino e assim por diante).
@@ -48,7 +59,7 @@ Dividir uma rede em seções menores e isoladas. Podem ser divididas por meio de
 	- As **VLANs** dividem o tráfego de uma única rede física em duas redes sem necessidade de diversos roteadores ou conexões de internet para rotear o tráfego de rede para destinos diferentes
 	- Os **esquemas de endereçamento de rede** criam segmentos de rede dividindo os recursos de rede entre várias sub-redes [na camada 3](https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/)
 
-#### Microssegmentação
+### Microssegmentação
 A microssegmentação, ao contrário, é um subconjunto da segmentação de rede que permite a aplicação de controles ainda mais granulares a cargas de trabalho individuais. (Uma carga de trabalho é um programa ou aplicativo — como, por exemplo, um servidor, uma [máquina virtual](https://www.cloudflare.com/learning/cloud/what-is-a-virtual-machine/) ou uma função [sem servidor](https://www.cloudflare.com/learning/serverless/what-is-serverless/) — que usam uma determinada quantidade de memória e recursos de computação.) A microssegmentação faz parte de um modelo de [segurança Zero Trust](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/), no qual nenhum usuário ou dispositivo é confiável por padrão.
 
 ## Wifi
@@ -86,3 +97,9 @@ Foi projetado para uso em redes residenciais ou pequenas empresas onde um servid
 
 #### WPA-Enterprise
 Para uso corporativo requer um servidor de autenticação, normalmente um servidor RADIUS (Remote Authentication Dial-In User Service). Este modo oferece uma segurança mais robusta, pois cada usuário possui credenciais individuais, o que facilita a gestão e a revogação de acessos.
+
+
+## Tunelamento
+Da mesma forma, na rede, os túneis são um método para transportar dados através de uma rede usando [protocolos](https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/) que não são compatíveis com essa rede. O tunelamento funciona encapsulando pacotes: envolvendo pacotes dentro de outros [pacotes](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/). (Pacotes são pequenos pedaços de dados que podem ser reagrupados em seu destino em um arquivo maior).
+
+O tunelamento é frequentemente utilizado nas [redes privadas virtuais (VPNs)](https://www.cloudflare.com/learning/access-management/what-is-a-vpn/). Ele também pode estabelecer conexões eficientes e seguras entre redes, permitir o uso de protocolos de rede não compatíveis e, em alguns casos, permitir aos usuários contornar [firewalls](https://www.cloudflare.com/learning/security/what-is-a-firewall/).
