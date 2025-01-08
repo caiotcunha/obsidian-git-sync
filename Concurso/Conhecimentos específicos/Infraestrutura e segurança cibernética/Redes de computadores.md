@@ -49,6 +49,15 @@ Intrusion Detection System. Monitora as atividades do sistema em busca de ativid
 Um sistema de prevenção de intrusão (IPS) monitora o tráfego da rede em busca de possíveis ameaças e as bloqueia automaticamente, alertando a equipe de segurança, terminando conexões perigosas, removendo conteúdo malicioso ou acionando outros dispositivos de segurança. IPS filtra pacotes. 
 
 
+## Identity Access Managment (IAM)
+
+O gerenciamento de identidade fornece soluções para governança de identidade, gerenciamento de acesso e serviços de diretório. O gerenciamento de identidade ajuda as organizações a fortalecer a segurança, simplificar a conformidade, e capturar oportunidades de negócios em acesso móvel e social.
+
+- **Governança de identidade:** gerencia o ciclo de vida da conta do usuário, incluindo direitos e provisionamento.
+
+## Privileged access managment (PAM)
+O PAM (privileged access management) é uma solução de segurança de identidade que ajuda a proteger as organizações contra ameaças cibernéticas, monitorando, detectando e impedindo o acesso privilegiado não autorizado a recursos críticos. O PAM funciona por meio de uma combinação de pessoas, processos e tecnologia e oferece visibilidade sobre quem está usando contas privilegiadas e o que está fazendo enquanto está conectado. Limitar o número de usuários que têm acesso a funções administrativas aumenta a segurança do sistema, enquanto camadas adicionais de proteção reduzem as violações de dados por agentes de ameaças.
+
 
 ## Segmentação de rede
 Dividir uma rede em seções menores e isoladas. Podem ser divididas por meio de hardware físico ou software.
@@ -103,3 +112,13 @@ Para uso corporativo requer um servidor de autenticação, normalmente um servid
 Da mesma forma, na rede, os túneis são um método para transportar dados através de uma rede usando [protocolos](https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/) que não são compatíveis com essa rede. O tunelamento funciona encapsulando pacotes: envolvendo pacotes dentro de outros [pacotes](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/). (Pacotes são pequenos pedaços de dados que podem ser reagrupados em seu destino em um arquivo maior).
 
 O tunelamento é frequentemente utilizado nas [redes privadas virtuais (VPNs)](https://www.cloudflare.com/learning/access-management/what-is-a-vpn/). Ele também pode estabelecer conexões eficientes e seguras entre redes, permitir o uso de protocolos de rede não compatíveis e, em alguns casos, permitir aos usuários contornar [firewalls](https://www.cloudflare.com/learning/security/what-is-a-firewall/).
+
+
+## Security Information and Event Managment system (SIEM)
+É uma ferramenta que coleta dados de vários dispositivos da rede e armazena eles em um lugar centralizado. Ele faz correlação entre esses dados investigando incidentes e respondendo a eles em tempo real.
+Capacidades:
+- Correlation between events from different log sources.
+- Provide visibility on both Host-centric and Network-centric activities.
+- Allow analysts to investigate the latest threats and timely responses.
+- Hunt for threats that are not detected by the rules in place.
+

@@ -107,6 +107,7 @@ Como prevenir:
 - Ensure that your CI/CD pipeline has proper segregation, configuration, and access control to ensure the integrity of the code flowing through the build and deploy processes.
 - Ensure that unsigned or unencrypted serialized data is not sent to untrusted clients without some form of integrity check or digital signature to detect tampering or replay of the serialized data
 
+
 ## Server-Side Request Forgery (SSRF)
 Ocorre quando um atacante força a aplicação web a mandar requisições para lugares arbitrários enquanto mantém controle do conteúdo delas. Geralmente relacionado a aplicações web que usam serviços terceirizados.
 
