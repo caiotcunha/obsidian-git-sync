@@ -66,6 +66,12 @@ With the creation of ATT&CK, MITRE is fulfilling its mission to solve problems f
 ## CIS controls
 Os **CIS Controls** (Center for Internet Security Controls) são um conjunto de melhores práticas de segurança cibernética desenvolvidas pelo Center for Internet Security (CIS). Eles têm como objetivo ajudar organizações a proteger seus sistemas e dados contra ameaças cibernéticas, organizando ações prioritárias em segurança de forma eficaz e prática. Os controles são amplamente reconhecidos como padrões para a implementação de segurança cibernética.
 
+### Estrutura dos CIS Controls
+Os controles são organizados em três categorias principais, com base na maturidade da organização e na prioridade das ações:
+1. **Basic**: Controles essenciais que são fundamentais para todas as organizações. Eles representam as primeiras etapas que devem ser adotadas para estabelecer uma base de segurança robusta.
+2. **Foundational**: Controles que ampliam e complementam os controles básicos, fornecendo maior resiliência e proteção.
+3. **Organizational**: Controles que lidam com políticas, treinamento e processos organizacionais, assegurando que os aspectos humanos e administrativos da segurança também sejam tratados.
+
 
 # Inteligência de ameaças
 

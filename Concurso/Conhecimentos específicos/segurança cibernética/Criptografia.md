@@ -100,3 +100,22 @@ Blowfish é uma cifra simétrica de blocos que utiliza chave com tamanho variá
 # Políticas
 - **SPF (Sender Policy Framework)**: é um sistema que evita que outros domínios, enviem e-mails não autorizados em nome de um domínio. Ele funciona por meio da **validação de endereços IP** autorizados a enviar e-mails em nome de um domínio.
 - **DKIM (DomainKeys Identified Mail)**: utiliza **criptografia de chave pública** para adicionar assinaturas digitais aos e-mails. Essas assinaturas permitem verificar matematicamente a autenticidade do remetente.
+
+
+## Certificado digital
+O certificado digital é a identidade eletrônica de uma pessoa ou empresa. Ele funciona como uma carteira de identificação virtual e permite assinar documentos à distância com o mesmo valor jurídico da assinatura feita de próprio punho no papel, mas sem precisar reconhecer firma em cartório.
+
+**Componentes de um Certificado Digital:**
+- **Chave Privada:** Utilizada para criptografar dados que atestam a identidade do titular. Apenas o proprietário do certificado tem acesso a essa chave.
+- **Chave Pública:** Disponibilizada para quem precisa decodificar as informações criptografadas pela chave privada, confirmando a identidade do titular.
+
+**Emissão e Autoridades Certificadoras:**
+No Brasil, os certificados digitais são emitidos por Autoridades Certificadoras (AC) credenciadas pela Infraestrutura de Chaves Públicas Brasileira (ICP-Brasil). Essas entidades são responsáveis por verificar a identidade dos solicitantes e emitir os certificados correspondentes.
+
+## Assinatura digital
+
+A **assinatura digital** é um mecanismo eletrônico que permite a autenticação de documentos digitais, assegurando sua integridade e a identidade do signatário. Ela utiliza técnicas de criptografia avançada para garantir que o documento não seja alterado após a assinatura e que o autor seja devidamente identificado.
+
+**Como Funciona:**
+- **Criptografia Assimétrica:** A assinatura digital baseia-se em um par de chaves criptográficas: uma chave privada, conhecida apenas pelo signatário, e uma chave pública, disponível para quem precisa verificar a assinatura. Ao assinar um documento, o signatário utiliza sua chave privada para criar um código único, que é anexado ao documento. Qualquer alteração no documento invalida a assinatura, garantindo sua integridade.
+- **Certificado Digital:** Para que a assinatura digital tenha validade jurídica, é necessário um certificado digital emitido por uma Autoridade Certificadora (AC) reconhecida. No Brasil, as ACs são regulamentadas pela Infraestrutura de Chaves Públicas Brasileira (ICP-Brasil).
