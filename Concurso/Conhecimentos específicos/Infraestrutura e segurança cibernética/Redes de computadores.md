@@ -55,6 +55,11 @@ O gerenciamento de identidade fornece soluções para governança de identidade,
 
 - **Governança de identidade:** gerencia o ciclo de vida da conta do usuário, incluindo direitos e provisionamento.
 
+- Resources: These are objects within a particular service; these include users, roles, groups & policies.
+- Identities: Represent certain users permitted and authorised to perform specific roles and actions.
+- Entities: A subset of resources which are used for authentication purposes. It includes users & roles.
+- Principals: A person or some application requesting to use Amazon resources after signing in.
+
 ## Privileged access managment (PAM)
 O PAM (privileged access management) é uma solução de segurança de identidade que ajuda a proteger as organizações contra ameaças cibernéticas, monitorando, detectando e impedindo o acesso privilegiado não autorizado a recursos críticos. O PAM funciona por meio de uma combinação de pessoas, processos e tecnologia e oferece visibilidade sobre quem está usando contas privilegiadas e o que está fazendo enquanto está conectado. Limitar o número de usuários que têm acesso a funções administrativas aumenta a segurança do sistema, enquanto camadas adicionais de proteção reduzem as violações de dados por agentes de ameaças.
 
