@@ -1,0 +1,1 @@
+Já sabemos que a governança de segurança da informação é uma vertente da governança corporativa. Ou seja, é um conjunto de políticas, métodos, normas que unidos indicam a forma como a empresa deverá ser administrada.
