@@ -1,0 +1,3 @@
+Também conhecido como armazenamento local, o ambiente on-premise, caracteriza-se por hospedar infraestruturas e serviços dentro da própria empresa. Dada às suas características, este modelo proporciona um controle total sobre os recursos e dados, oferecendo um nível elevado de segurança e personalização. Por outro lado, essa solução requer investimentos significativos em hardware, software e manutenção, além de uma gestão técnica constante.
+
+**SAML (Security Assertion Markup Language)** é um padrão baseado em XML que permite a troca de informações de autenticação e autorização entre diferentes partes.

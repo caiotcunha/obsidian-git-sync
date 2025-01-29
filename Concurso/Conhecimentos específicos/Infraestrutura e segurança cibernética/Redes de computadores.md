@@ -127,3 +127,5 @@ Capacidades:
 - Allow analysts to investigate the latest threats and timely responses.
 - Hunt for threats that are not detected by the rules in place.
 
+
+**Redes Definidas por Software (SDN)** são uma abordagem de redes que separa o plano de controle do plano de dados. Isso significa que as decisões sobre onde o tráfego deve ser enviado (plano de controle) são separadas do sistema que realmente move os pacotes para seus destinos (plano de dados).

@@ -24,12 +24,25 @@ OAuth 2.0, que significa "Autorização Aberta", é um padrão projetado para pe
 1. O Cliente solicita autorização (solicitação de autorização) do servidor de Autorização, fornecendo a ID e o segredo do cliente como identificação; ele também fornece os escopos e um URI de endpoint (URI de redirecionamento) para enviar o token de acesso ou o código de autorização.
 2. O servidor de Autorização autentica o Cliente e verifica se os escopos solicitados são permitidos.
 3. O proprietário do recurso interage com o servidor de autorização para conceder acesso.
-4. O servidor de autorização é redirecionado de volta para o cliente com um código de autorização ou token de acesso, dependendo do tipo de concessão, como será explicado na próxima seção. Um token de atualização também pode ser retornado.
+4. O servidor de autorização é redirecionado de volta para o cliente com um código de autorização ou token de acesso, dependendo do tipo de concessão. Um token de atualização também pode ser retornado.
 5. Com o token de acesso, o cliente solicita acesso ao recurso a partir do servidor de recursos.
 
 No OAuth 2.0, **concessões** são o conjunto de etapas que um Cliente deve executar para obter a autorização de acesso a recursos.
+No contexto do OAuth 2.0, os refresh tokens, diferentemente dos access tokens, destinam-se somente ao uso com servidores de autorização e não são enviados para servidores de recursos.
 
 ## OpenID Connect
+
 OpenID Connect is an interoperable authentication protocol based on the OAuth 2.0 framework of specifications (IETF RFC 6749 and 6750). It simplifies the way to verify the identity of users based on the authentication performed by an Authorization Server and to obtain user profile information in an interoperable and REST-like manner.
 
+### Funcionamento
+1. Usuário final entra em um site ou aplicação web
+2. Usuário clica em logar e digita seu nome e senha
+3. The RP (relying party) envia uma requisição para o provedor OpenID
+4. O provedor OpenID autentica o usuário e obtém a autorização
+5. O provedor OpenID  responde com um token de identidade e usualmente um token de acesso
+6. The TP pode mandar uma requisição com o token de acesso para o dispositivo do usuário
+7. O endpoint de UserInfo retorna os Claims sobre o usuário final
 
+A especificação do OpenID Connect determina que a autenticação pode ocorrer, entre outras formas, em fluxo implícito, no qual tokens são devolvidos diretamente para a parte confiável, em um URI (Uniform Resource Identifier) de redirecionamento.
+
+![[Pasted image 20250122155832.png]]

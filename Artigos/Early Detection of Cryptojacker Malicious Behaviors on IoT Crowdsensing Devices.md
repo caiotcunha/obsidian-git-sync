@@ -34,3 +34,82 @@ However, these approaches are not valid for some IoT-oriented application scenar
 In [cryptography](https://en.wikipedia.org/wiki/Cryptography "Cryptography"), a **ring signature** is a type of [digital signature](https://en.wikipedia.org/wiki/Digital_signature "Digital signature") that can be performed by any member of a set of users that each have [keys](https://en.wikipedia.org/wiki/Key_(cryptography) "Key (cryptography)"). Therefore, a message signed with a ring signature is endorsed by someone in a particular set of people. One of the security properties of a ring signature is that it should be computationally infeasible to determine _which_ of the set's members' keys was used to produce the signature. Ring signatures are similar to [group signatures](https://en.wikipedia.org/wiki/Group_signature "Group signature") but differ in two key ways: first, there is no way to revoke the anonymity of an individual signature; and second, any set of users can be used as a signing set without additional setup.
 
 Monero uses Dandelion++, a protocol which obscures the [IP address](https://en.wikipedia.org/wiki/IP_address "IP address") of devices producing transactions.
+
+# Roteiro
+
+## introdução
+Boa tarde, meu nome é caio teles essa é a caroline carvalho e hoje vamos apresentar o trabalho Early detection of Cryptojacker Malicious Behaviors on IoT Crowdsensing Devices
+
+Bom pra começar precisamos entender alguns conceitos para conseguir acompanhar a ideia proposta no artigo e a relevância dela. Mais especificamente precisamos entender o conceito de cryptojacker, o que são iot crowdsensing Devices e como essas duas coisas se relacionam
+
+Então cryptojacking é o ato de explorar um dispositivo para mineirar cryptomoedas. 
+
+As criptomoedas são uma moeda digital projetada para não ser dependente de uma autoridade central, como um governo ou banco. A validade de cada moeda é proveniente da blockchain
+
+O processo de adicionar novos blocos na blockchain gera as moedas e é chamado de mineração. Nesse processo basicamente o minerador pega as informações do bloco anterior da blockchain, contidos no block header, e junta com um número nonce passa por uma função hash. Se o hash for o esperado o minerador consegue adicionar um bloco à blockchain e receber a recompensa.
+
+O que é importante ressaltar é que esse processo é lento e existem hardwares específicos para essa função que são muito mais eficientes na mineração, são chamados de ASICs. As empresas que detém esses hardwares dominam a mineração de bitcoins. Como foi mostrado na apresentação do samuel na semana passada.
+
+Aquele ali é a logo do bitcoin a criptomoeda mais famosa.
+Esse é um hardware específico da bitmain uma marca famosa. Esse custa 4.500 dolares
+
+O próximo conceito é crowdsensing que é uma técnica onde um grupo grande de dispositivos IoT coleta dados de maneira colaborativa com o objetivo de extrair alguma informação de interesse. No caso do artigo eles analisam especificamente a coleta de dados de frequência de rádio por sua aplicabilidade em redes de rádio cognitivo. Essas redes  são sistemas que monitoram o espectro de frequencias em tempo real e realocam os usuários para frequências livres ou subutilizadas melhorando a eficiência da rede.
+
+Bom e como essas coisas se conectam? 
+
+Eu tinha dito que a mineração é um processo computacionalmente caro e que existem hardwares específicos pra isso, então pra que se preocupar em proteger dispostivos IoT de sensoriamento, já que esses dispositivos geralmente possuem poder de computação baixo, limitações em termo de memória e de consumo de energia?
+
+De fato esses dispositivos não estavam na mira dos criptojackers inicialmente, mas tudo isso mudou em 2014 com a criação da criptomoeda monero.
+
+O algoritmo de mineração randomX usado no monero foi desenvolvido para ser extremamente eficiente em processadores comuns como CPUs em detrimento das GPUs e ASICs geralmente usados na mineração de bitcoin. 
+
+Os principais pilares do monero são anonimidades e privacidade. Todos os detalhes das transações são ofuscados, ao contrário do bitcon. Perfeito pra quem quer praticar atos ilegais, quer dizer manter a privacidade.
+
+Isso permitiu que a moeda fosse minerada em processadores de IoT. Segundo os criadores do monero essa decisão visava fomentar a distribuição da mineração. Como vimos na apresentação do samuel a mineração de bitcoin é concentrada em grandes empresas
+
+O esforço para proteger esses dispositivos, então começou a crescer significativamente. Apesar de soluções anteriores de identificação de criptojackers obterem bons resultados o artigo aponta algumas limitações nos trabalhos anteriores.
+
+A maior parte das soluções de detecção de criptojackers são focadas em dispositivos com maior poder computacional
+
+A maior parte das soluções relacionadas à dispositivos com limitações de recursos focam na análise do tráfico de rede, mas essas soluções não são válidas para algumas aplicações de IoT como o crowdsensing, pois os dispositivos são conectados à redes privadas que não podem ser monitoradas
+
+A maior parte das soluções focam em identificar na fase da mineração, já que o consumo de GPU ou CPU aumenta significativamente tornando mais fácil de identificar
+
+A avaliação do consumo de soluções baseadas em ML não é apresentada. Isso é importante em um cenário de IoT porque os recursos são limitados.
+
+Para melhorar os desafios citados anteriormente, o artigo propoe e implementa um framework orientado a IoT e baseado em ML que usa a impressão digital para detectar e classificar as fases preparatórias dos cryptojackers maliciosos.
+
+## Trabalhos relacionados
+(4) análise das assinaturas estáticas -> bom resultado, mas não funciona com criptojackers novos e é afetado por ténicas de ofuscação
+
+(6) Combina uma análise estática com dinâmica. A parte estática é o monitoramento dos system calls e a parte dinâmica monitora a sequência de execução
+
+(1) Os autores usam métodos estatísticos e um conjunto específico de features para treinar um modelo de machine learning capaz de diferenciar cryptojackers de aplicativos comuns
+
+(5) Usam debuggers para monitorar os OPcodes executados pela CPU em cada tempo de execução
+
+(11) e (17)  focam em detectar browser-based cryptojackers
+
+(9) Detecta verificando a utilização de CPU
+
+(10) detecta uma variedade de ataques em Raspberries Pi combinando eventos de kernel e aprendizado supervisionado e não supervisionado
+
+## Cenário
+ElectroSense é uma plataforma open source que analisa o espectro de frequência de rádio e implanta sensores que usam hardware simples. 
+O modelo utilizado como sensor nesse trabalho é um raspberry Pi 3 modelo B
+
+Essa plataforma é composta por 3 partes: os sensores, o backend da plataforma e o site que oferece diferentes serviços
+
+Esse backend gerencia algumas funcionalidades dos sensores, passa para os usuários os dados coletados e decodifica algumas transmissões específicas.
+
+
+o sensor foi infectado com um trojan com comportamento de cryptojacker. Esse trojan foi executado usando acesso SSH, seria o caso de algum hacker conseguisse o acesso ao rapyberry com uma técnica de bruteforce nas senhas.
+
+1) Cria um backdoor e ganha acesso ao dispositivo via irc(Internet Relay Chat). Executa a si mesmo e tenta eliminar qualquer outro malware presente no dispositivo
+2) Baixa as dependências necessárias para o minerador, acaba se conectando a 5 endereços de servidor
+3) Instala e builda o cryptominer. Um mineirador multithread chamado de minerd
+4) Tenta espalhar o cryptojacker pela rede. Baixa um network sacnner basico e tenta conectar na porta 22 de todos os dispositivos encontrados com o usuário e senha padrão do raspyberry
+5) Começa a mineração da criptomoeda, nesse caso se junta a uma pool de mineradores. Usa o site minergate
+
+
+Apesar dessas fases serem específicas desse malware, os malwares desse mesmo tipo costumam seguir os mesmos passos. São bem documentados em knowledge bases de cyberattacks ATT&CK proposed by MITRE

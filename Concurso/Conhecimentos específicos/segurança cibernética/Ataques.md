@@ -145,3 +145,19 @@ tipos:
 - **Reflected XSS:** Os scripts maliciosos são refletidos de volta à vítima pelo servidor da web, geralmente através de links ou formulários.
 - **Stored XSS:** Os scripts maliciosos são armazenados no servidor (por exemplo, em um banco de dados) e são executados quando a vítima acessa o conteúdo comprometido.
 - **DOM-based XSS:** A vulnerabilidade ocorre no lado do cliente, onde scripts maliciosos são executados diretamente no navegador, manipulando o Document Object Model (DOM).
+
+ ## Cross-Site Request Forgery (CSRF)
+ é uma técnica de exploração de vulnerabilidade em que um atacante induz um usuário legítimo a executar ações indesejadas em um sistema web onde o usuário está autenticado. Este ataque tira proveito da confiança que o site alvo deposita no navegador do usuário.
+ 
+## **DNS cache snooping**
+é um tipo de ataque que explora a capacidade de um servidor DNS de responder a consultas. O objetivo é determinar se um determinado registro DNS está presente no cache do servidor, o que pode indicar que outro usuário solicitou aquela informação recentemente. Isso pode ser útil para um atacante saber quais sites são acessados por usuários de uma rede.
+
+DAST é uma abordagem de testes de segurança que se concentra em descobrir vulnerabilidades em aplicações enquanto elas estão sendo executadas. Diferente dos testes estáticos (SAST), que analisam o código-fonte, DAST envolve a análise dinâmica dos binários e do comportamento da aplicação em tempo real.
+
+A **lógica difusa** é uma técnica matemática usada para lidar com a incerteza e a imprecisão, sendo particularmente útil em situações onde as condições não são claramente definidas. Em testes dinâmicos, a lógica difusa pode ser aplicada para detectar padrões anômalos e potenciais falhas de segurança analisando o comportamento dos binários. Portanto, a afirmação de que "a lógica difusa é uma das técnicas utilizadas em testes dinâmicos (DAST) para tentar detectar falhas de segurança em binários" está correta.
+
+O **STP** é um protocolo de rede usado principalmente para evitar loops em redes locais (LANs). Ele assegura que exista uma única trajetória ativa entre dois dispositivos na rede, evitando ciclos redundantes que poderiam causar quedas no desempenho ou mesmo o colapso da rede.
+
+Os dispositivos na rede, como switches e roteadores, utilizam mensagens chamadas **Bridge Protocol Data Units (BPDUs)** para trocar informações sobre a topologia da rede. Essas mensagens são fundamentais para o funcionamento do STP.
+
+Em um **ataque ao STP**, um invasor pode enviar BPDUs falsificadas para manipular a topologia da rede. Por exemplo, o atacante pode enviar um BPDU indicando uma mudança de configuração ou topologia, fazendo com que os switches recalculam a árvore de abrangência. Isso pode resultar na interrupção do tráfego de rede ou na criação de loops, causando degradação de serviço ou mesmo falhas totais.
