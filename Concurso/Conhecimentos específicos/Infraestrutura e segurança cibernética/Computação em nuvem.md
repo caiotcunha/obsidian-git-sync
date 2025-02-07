@@ -28,3 +28,6 @@ Máquinas virtuais do Azure podem ser usadas de várias maneiras. Alguns exemplo
 - **Desenvolvimento e teste** – as máquinas virtuais do Azure oferecem uma maneira rápida e fácil de criar um computador com configurações específicas, necessárias para codificar e testar um aplicativo.
 - **Aplicativos na nuvem** – como a demanda por seu aplicativo pode variar, pode fazer sentido, em termos econômicos, executá-lo em uma máquina virtual no Azure. Você paga por máquinas virtuais extras quando precisa delas e as desliga quando não são mais necessárias.
 - **Datacenter estendido** – as máquinas virtuais em uma rede virtual do Azure podem ser facilmente conectadas à rede de sua organização.
+
+
+Cloud computing allows control over resource allocation
