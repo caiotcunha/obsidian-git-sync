@@ -54,9 +54,10 @@ Como prevenir:
 A aplicação interpreta um input digitado pelo usuário como comando ou parâmetro. Esse ataque depende muito de qual tecnologia é utilizada e como o programa interpreta o input.
 1. SQL injection: Ocorre quando o input do usuário é passado para uma query no SQL. Então, um atacante pode manipular o resultado da query roubando dados sensíveis ou alterando dados no banco de dados.
 2. Command Injection: Ocorre quando o input do usuário é passado para os comandos do sistema. Como resultado, um atacante pode executar quais comandos quiser nos servidores da aplicação, o que pode leva-los a ter acesso ao sistema.
+
 Como prevenir:
 1. Utilizar uma lista de permitidos: utilizar uma lista de inputs ou caracteres permitidos e comparar o input do usuário a eles.
-2. Quebrar o input: processar o input do usuário de forma a remover os caracteres perigosos
+2. Quebrar o input: processar o input do usuário de forma a remover os caracteres perigosos. Acrescentando, por exemplo, caracteres de escape para os caracteres especiais
 
 ## Insecure Design
  refere-se a vulnerabilidades que são inerentes à arquitetura da aplicação. A melhor forma de impedir que isso aconteça é seguir um desenvolvimento que possua ciclos de desenvolvimento de segurança (SSDLC).
