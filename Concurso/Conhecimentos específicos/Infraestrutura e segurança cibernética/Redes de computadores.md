@@ -8,12 +8,16 @@
 
 - **ICMP (Internet Control Message Protocol):** é um protocolo que os dispositivos de uma rede usam para comunicar problemas com a transmissão de dados. É um protocolo da camada de rede na arquitetura TCP/IP
 - **TLS (Transport Layer Security):** Esse protocolo foi criado para aumentar a privacidade e a segurança dos dados em comunicações pela internet. Todo site que usa https usa criptografia TLS. O protocolo tem 3 funções principais: Criptografia, autenticação e integridade. Para usar o TLS o servidor de origem tem que possuir um certificado TLS. No modelo tcp/ip o TLS atua na camada de transporte.
-- **IMAP (Internet Message Access Protocol):** é um protocolo usado por clientes de e-mail para acessar mensagens em um servidor de correio, e sua porta padrão é a 143.
+- **IMAP (Internet Message Access Protocol):** é um protocolo usado por clientes de e-mail para acessar mensagens em um servidor de correio, e sua porta padrão é a 143.o IMAP utiliza o **protocolo TCP** na camada de transporte.
 - **SMTP (Simple Mail Transfer Protocol):** é um protocolo padrão de envio de mensagens de correio eletrônico através da Internet. Atual na camada de apresentação.
 - **IPsec (Internet Protocol Security):** é um conjunto de protocolos desenvolvidos para garantir a segurança das comunicações a partir do protocolo IP, proporcionando integridade, autenticação e criptografia dos dados. IPsec opera em dois modos principais: Modo de Transporte e Modo de Túnel.
 	- **No modo de transporte:** o cabeçalho IP original é mantido e a segurança é aplicada ao payload (dados) do pacote IP. Ou seja, o cabeçalho IP original não é alterado, mas os dados (payload) são criptografados e um novo cabeçalho do protocolo AH (Authentication Header) ou ESP (Encapsulating Security Payload) é adicionado. Este modo é geralmente usado para comunicação de host a host.
 	- **No modo túnel:** um novo cabeçalho IP é adicionado fora do cabeçalho IP original. Este novo cabeçalho IP é utilizado para rotear o pacote ao destino final, encapsulando o pacote original completo (incluindo o cabeçalho IP original) dentro do pacote IPsec. Este modo é amplamente utilizado para comunicação entre gateways (roteadores, firewalls) e VPNs, pois permite encapsular pacotes IP inteiros.
 - **HTTPS:** é um protocolo de comunicação da Internet que protege a integridade e a confidencialidade dos dados durante a interação entre o computador do usuário e o site acessado. Atua na camada de aplicação.
+- **Border Gateway Protocol**: It is the language spoken by routers on the Internet to determine how packets can be sent from one router to another to reach their final destination. BGP has worked extremely well and continues to the be protocol that makes the Internet work. Na prática, o BGP (Border Gateway Protocol) é o padrão para roteamento entre sistemas autônomos (SA); ele permite que cada sistema autônomo conheça quais destinos podem ser alcançados por meio de seus SA vizinhos, uma vez que os pares de roteadores trocam informações de roteamento por conexões TCP semipermanentes.
+- **POP3 (Post Office Protocol version 3):** Este protocolo é utilizado para recuperar emails de um servidor de correio eletrônico para um cliente. Isso significa que o POP3 é responsável por baixar os emails do servidor para o computador local do usuário, onde eles podem ser lidos offline.
+- **DHCP (Dynamic Host Configuration Protocol)**, que é responsável por atribuir endereços IP automaticamente a dispositivos em uma rede. Quando um servidor DHCP é configurado, ele tem um _pool_ de endereços IP, que é uma faixa de endereços que ele pode distribuir para os dispositivos. Um servidor DHCP pode renovar contratos de concessão de IPs já distribuídos. Isso acontece automaticamente para dispositivos que já têm um endereço IP e ainda estão ativos na rede. Normalmente, um servidor DHCP não distribui endereços de sub-redes diferentes a menos que tenha sido configurado especificamente para lidar com várias sub-redes
+- **TCP**: a finalização de uma conexão TCP (transmission control protocol) ocorre com a realização de dois processos two-way handshake do tipo FIN e ACK.
 
 
 
@@ -129,3 +133,6 @@ Capacidades:
 
 
 **Redes Definidas por Software (SDN)** são uma abordagem de redes que separa o plano de controle do plano de dados. Isso significa que as decisões sobre onde o tráfego deve ser enviado (plano de controle) são separadas do sistema que realmente move os pacotes para seus destinos (plano de dados).
+
+# Ferramentas
+- **Webhooks:** permitem conectar aplicativos e sistemas de modo que eles compartilhem dados em tempo real, por meio de funções de retorno de chamada baseadas em HTTP que viabilizam a comunicação orientada por eventos entre os sistemas.
