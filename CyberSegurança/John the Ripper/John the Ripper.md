@@ -19,4 +19,4 @@ o formato é nt no john
 
 unshadow (path to passwd) (path to shadow) > destin.txt
 
-l
+ssh2john (id_rsa private key file path) > (output file)

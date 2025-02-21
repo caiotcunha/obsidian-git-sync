@@ -18,6 +18,8 @@
 - **POP3 (Post Office Protocol version 3):** Este protocolo é utilizado para recuperar emails de um servidor de correio eletrônico para um cliente. Isso significa que o POP3 é responsável por baixar os emails do servidor para o computador local do usuário, onde eles podem ser lidos offline.
 - **DHCP (Dynamic Host Configuration Protocol)**, que é responsável por atribuir endereços IP automaticamente a dispositivos em uma rede. Quando um servidor DHCP é configurado, ele tem um _pool_ de endereços IP, que é uma faixa de endereços que ele pode distribuir para os dispositivos. Um servidor DHCP pode renovar contratos de concessão de IPs já distribuídos. Isso acontece automaticamente para dispositivos que já têm um endereço IP e ainda estão ativos na rede. Normalmente, um servidor DHCP não distribui endereços de sub-redes diferentes a menos que tenha sido configurado especificamente para lidar com várias sub-redes
 - **TCP**: a finalização de uma conexão TCP (transmission control protocol) ocorre com a realização de dois processos two-way handshake do tipo FIN e ACK.
+- **Syslog:** é um protocolo amplamente utilizado para o envio de mensagens de log em uma rede IP. Ele é muito importante para a administração de sistemas, pois permite o envio de mensagens de eventos gerados por dispositivos de rede, servidores, entre outros, para um servidor de logs centralizado. Uma característica fundamental do _Syslog_ é que ele pode utilizar tanto os protocolos **TCP (Transmission Control Protocol)** quanto **UDP (User Datagram Protocol)** para a transmissão dessas mensagens.
+- **EAP-TLS (Extensible Authentication Protocol-Transport Layer Security)**: é um método de autenticação utilizado em redes sem fio que proporciona segurança robusta através do uso de **certificados digitais** para autenticar tanto o cliente quanto o servidor. Esse método é altamente seguro porque utiliza a infraestrutura de chaves públicas (PKI) para garantir a autenticidade das partes envolvidas.
 
 
 
@@ -35,6 +37,8 @@ Tipos de firewall:
 Regras de firewall podem ser feitas utilizando os componentes básicos de um pacote: endereço de destino, endereço da fonte, porta, protocolo, ação, direção. Essas regras criam uma lista de conexões e interações permitidas.
 
 O uso de firewall UTM (unified threat management) é uma das principais soluções para evitar ataques de flood e de vírus.
+
+Denomina-se three-pronged firewall a utilização de um firewall com três pontos de rede: um para a rede privada, outro para a rede pública, e outro para a DMZ.
 
 ## IDS
 

@@ -16,3 +16,5 @@ pretérito perfeito é uma das caracteristicas do texto narrativo
 **Paronímia** é a relação entre palavras que têm uma estrutura semelhante, mas significados diferentes. A semelhança pode ser na grafia ou na pronúncia
 
 que sem vírgula é restritivo, com vírgula é explicativo
+
+1 a 7
