@@ -1,0 +1,3 @@
+- Exploit: código que usa uma vulnerabilidade presente no sistema alvo
+- Vulnerabilidade: Uma falha de design, código ou lógica que afeta o sistema alvo
+- Payload: São os códigos que vão rodar no sistema alvo

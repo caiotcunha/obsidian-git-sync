@@ -1,0 +1,3 @@
+O **modelo de dados lógico** é uma etapa no design de banco de dados onde se define como os dados serão organizados dentro do sistema, incluindo detalhes como tabelas, colunas e tipos de dados. Ele é independente de qualquer sistema de gerenciamento de banco de dados específico e detalha a estrutura lógica que será utilizada para armazenar e acessar os dados, mas sem considerar os aspectos físicos.
+
+o **modelo de domínio** é mais voltado para a representação conceitual do ambiente de negócios. Ele descreve as entidades do domínio e as relações entre elas, focando nas regras de negócio e nos conceitos que são importantes para o sistema, mas sem entrar em detalhes técnicos sobre como esses dados serão armazenados ou manipulados em um banco de dados.
