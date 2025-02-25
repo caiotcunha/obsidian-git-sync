@@ -1,5 +1,4 @@
 - Precisava ser flexivel para suportar diferentes aplicações
-![[Pasted image 20230927165418.png]]
 - Camada hospedeiro-rede:
 	- sem protocolo
 	- responsável por transmitir os pacotes IPs
@@ -25,6 +24,4 @@
 				- usadas em aplicações de one-shot
 				- request-reply
 - Camada de aplicação:
-	- ![[Pasted image 20230927172558.png]]
 	- aplicação != protocolo
-- ![[Pasted image 20230927174141.png]]
