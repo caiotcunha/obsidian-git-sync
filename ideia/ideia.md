@@ -1,0 +1,1 @@
+mecanismo de troca entre estoques de empresas?
