@@ -8,6 +8,9 @@ O salt é uma sequência aleatória de caracteres única para cada senha. Ele é
 
 Conforme a premissa do hashing uniforme simples, cada chave tem igual probabilidade de passar para qualquer das m posições por uma operação de hash, independentemente da posição que qualquer outra chave tenha ocupado após o hash. No método de divisão para criar funções hash, é mapeada uma chave k para uma de m posições, tomando-se o resto da divisão de k por m, de modo que a função hash é h(k) = k mod m.
 
+### sha-3
+O algoritmo **SHA-3** faz parte da família de algoritmos de hashing desenvolvida pelo NIST, e é baseado na função _Keccak_. Diferentemente dos algoritmos de hash tradicionais que utilizam processos de **compressão** e **permutação linear**, o SHA-3 opera por meio de um sistema de **esponja** (ou "sponge function"). Este sistema utiliza fases de **absorção** e **compressão** para processar os dados. Na fase de absorção, os dados são incorporados ao estado da esponja, e na fase de compressão, os dados são reduzidos até o tamanho desejado do hash.
+
 ## Criptografia de curva elíptica
 A **criptografia de curva elíptica (ECC, Elliptic Curve Cryptography)** é um tipo de criptografia assimétrica que utiliza as propriedades matemáticas das curvas elípticas para oferecer segurança equivalente a outros métodos, como RSA, mas com **chaves muito menores**. Isso a torna mais eficiente em termos de armazenamento, processamento e transmissão de dados.
 Em criptografia de curva elíptica, para ser considerada uma curva elíptica, a equação y2 = x3 + ax + b deve ser satisfeita.

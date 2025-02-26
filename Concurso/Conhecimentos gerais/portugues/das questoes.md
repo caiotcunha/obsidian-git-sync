@@ -18,3 +18,5 @@ pretérito perfeito é uma das caracteristicas do texto narrativo
 que sem vírgula é restritivo, com vírgula é explicativo
 
 1 a 7
+
+A função fática é uma das funções da linguagem que se concentra no canal de comunicação. Ela é utilizada para estabelecer, manter ou encerrar um diálogo
