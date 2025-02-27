@@ -1,0 +1,1 @@
+Se você pode abrir o vi com sudo use ``:!sh`` para abrir um shell de root
