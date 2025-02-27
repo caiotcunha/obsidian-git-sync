@@ -31,5 +31,8 @@ Mostra os payloads disponíveis
 É uma ferramenta focada em pegar reverse shells. É essencial se você deseja usar meterpreter shells.
 1. ``msfconsole``
 2. ``use multi/handler``
+3. configura com o mesmo payload criado ``set payload <payload>``
+4. configura as outras variaveis
+5. ``exploit``
 
 ``exploit -j`` inicia o comando como um trabalho no background
