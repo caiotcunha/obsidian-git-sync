@@ -19,7 +19,7 @@ Em criptografia de curva elíptica, para ser considerada uma curva elíptica, a 
 Criptografia de chave pública (ou criptografia assimétrica) não é a técnica mais eficiente e rápida quando comparada à criptografia de chave privada (simétrica) para o armazenamento de grandes quantidades de dados. A criptografia assimétrica utiliza um par de chaves (pública e privada) e, embora ofereça maior segurança em algumas situações, é significativamente mais lenta e consome mais recursos computacionais.É neste contexto que entram o **RSA (Rivest-Shamir-Adleman)** e o **ECC (Elliptic Curve Cryptography)**.
 
 ### RSA
-O algoritmo RSA utiliza a função matemática Totiente de Euler para gerar chaves criptográficas assimétricas públicas e privadas.
+O algoritmo RSA utiliza a função matemática Totiente de Euler para gerar chaves criptográficas assimétricas públicas e privadas. O RSA é um algoritmo de criptografia assimétrica que utiliza chaves com 1.024 bits.
 
 
 ## Criptografia simétrica
@@ -31,6 +31,7 @@ Dentro da criptografia simétrica, existem dois tipos principais de algoritmos:�
 - **Cifras de fluxo**: Operam sobre os dados de forma contínua, ou seja, bit a bit, ou byte a byte. Elas são geralmente mais rápidas e adequadas para transmissões de dados em tempo real.
   
 - **Cifras de bloco**: Operam em blocos de dados fixos (por exemplo, 64 ou 128 bits). Cada bloco é criptografado de forma independente, o que pode trazer um nível adicional de segurança.
+	- A cifra de bloco é uma das classes gerais de técnicas de criptografia simétrica utilizada em muitos protocolos seguros da Internet, como o PGP e o SSL.
   
 
 Ambos os tipos de cifras são válidos para a criptografia simétrica, e a escolha entre uma cifra de fluxo ou uma cifra de bloco depende das características internas do algoritmo e das necessidades específicas da aplicação.

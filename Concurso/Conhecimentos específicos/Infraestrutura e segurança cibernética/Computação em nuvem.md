@@ -11,11 +11,19 @@ Tipos de serviço de nuvem:
 - **IaaS (infraestrutura como serviço):** A categoria mais básica de serviços de computação em nuvem. Esse tipo de serviço permite o aluguel de infraestruturas de TI, incluindo servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais, de um provedor de nuvem. No caso das IaaS, a empresa é responsável por proteger o hardware e outros recursos de computação armazenamento e rede física, enquanto o cliente é responsável pela proteção dos dados e aplicativos, e as redes virtuais.
 - **PaaS (Plataforma como serviço):** se refere aos serviços de computação em nuvem que fornecem um ambiente sob demanda para desenvolvimento, teste, fornecimento e gerenciamento de aplicativos de software. A PaaS foi criada para facilitar aos desenvolvedores criarem aplicativos móveis ou Web rapidamente, sem se preocupar com a configuração ou gerenciamento de infraestrutura subjacente de servidores, armazenamento, rede e banco de dados. Nesse caso, o provedor tem responsabilidade pela segurança quase integral.
 - **SaaS (software como serviço):** é um método para fornecer aplicativos pela internet sob demanda. Nesse caso O fornecedor é o maior responsável pela segurança, sendo o cliente muito pouco participativo.
+- **IaC (Infraestrutura como Código):** é uma prática da engenharia de software que promove a gestão e provisionamento de infraestrutura de TI através de scripts de código. Esta prática está altamente alinhada com os princípios da automação e os processos de DevOps, que buscam aumentar a eficiência e reduzir a possibilidade de erro humano na configuração e no gerenciamento de servidores e sistemas operacionais. Na prática de IaC, busca-se predominantemente uma **infraestrutura imutável**. Isso significa que, para realizar atualizações ou mudanças, cria-se uma nova instância da infraestrutura com as alterações necessárias, em vez de modificar a infraestrutura existente. Este modelo traz mais previsibilidade, estabilidade e facilidade no gerenciamento de configurações e rollback, caso necessário.
 
 
 Benefícios:
 - **Elasticidade**: habilidade de alocar ou desalocar recursos de forma dinâmica e automática para atender à demanda variável, mantendo o desempenho e a eficiência. Isso é importante para lidar com flutuações no uso sem a necessidade de uma intervenção manual extensa.
 
+**Regiões** são locais geográficos distintos que contêm várias zonas de disponibilidade. Cada região é independente das outras, garantindo a separação física de dados.
+
+**Zonas de disponibilidade** são locais distintos dentro de uma região que estão conectados por redes de baixa latência. Essas zonas são projetadas para serem isoladas umas das outras em termos de falhas físicas e, portanto, oferecem uma alta disponibilidade e tolerância a falhas.
+
+**Escalabilidade horizontal (→)**: Adição de **mais máquinas/servidores**, distribuindo a carga de trabalho entre eles.
+
+**Escalabilidade Vertical (↑)**: **Upgrade nas máquinas já existentes**, a fim de melhorar a performance, sem precisar acrescentar novos dispositivos.
 
 ## Máquinas Virtuais do Azure
 
