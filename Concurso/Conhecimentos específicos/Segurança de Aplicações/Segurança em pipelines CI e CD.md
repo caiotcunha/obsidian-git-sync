@@ -8,3 +8,13 @@ O conceito de "shift left" é um princípio fundamental em CI/CD e DevSecOps que
 **Código:** conforme os desenvolvedores escrevem o código, tome medidas para garantir que ele esteja em conformidade com padrões predefinidos e diretrizes de design. Utilize scanners de código-fonte para detectar partes do código que possam estar vulneráveis a ameaças de segurança.
 **Compilação:** quando os desenvolvedores começarem a migrar os códigos-fonte para um repositório compartilhado, certifique-se de que os testes de automação sejam acionados para verificar se as compilações estão em conformidade com os requisitos. 
 **Teste:** quando a compilação estiver concluída, teste o software para identificar bugs. Se novas funcionalidades forem adicionadas, mais testes automatizados serão realizados.
+
+## Melhores práticas de segurança de CI/CD
+
+- **Monitoramento e alertas**
+- **Use o princípio RBAC combinado com menos privilégios:** Fornecer acesso aos recursos do sistema com base na função ou função designada de um usuário dentro de uma organização é a base do Controle de Acesso Baseado em Função ou RBAC. 
+- **Mantenha a proveniência do pipeline como um registro imutável**
+- **Utilize totalmente seu SBOM:** Um SBOM **é um inventário legível por máquina de um aplicativo, que identifica os pacotes usados pelo software**. O conteúdo pode incluir softwares de terceiros de fornecedores, artefatos internos e bibliotecas de código aberto. Usamos para comparar com uma lista de CVEs conhecidos e verificar possíveis vulnerabilidades no código
+- **Verifique a conformidade com suas políticas**
+- **Proteja o arquivo de instruções do pipeline**
+- **Garanta seu resultado final**

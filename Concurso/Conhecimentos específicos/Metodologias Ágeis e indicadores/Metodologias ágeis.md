@@ -78,6 +78,9 @@ Times de scrum são auto-organizáveis, ou seja, eles têm autonomia para decidi
 - **Sprint Backlog:** seu compromisso é a meta da Sprint (sprint goal).
 - **Increment:** seu compromisso é a definição de pronto (definition of done).
 
+### Valores
+Os **valores do Scrum**, que guiam o comportamento do Scrum Team, são na verdade cinco: **Comprometimento, Coragem, Foco, Abertura** e **Respeito**.
+
 ## Kanban
 
 O Quadro Kanban é dividido em colunas, da seguinte forma:
