@@ -5,3 +5,5 @@
 - **QUE=** O que, os quais, a qual, as quais;
 - **ONDE=** pede a preposição "em" = em que, na qual;
 - **Aonde=** Pede a preposição "a" = a qual, as quais.
+- **uma vez que** = porquanto,
+- 

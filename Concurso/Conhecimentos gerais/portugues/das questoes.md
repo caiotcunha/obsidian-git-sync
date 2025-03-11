@@ -21,3 +21,6 @@ A função fática é uma das funções da linguagem que se concentra no canal 
 
 O pronome cujo faz a **concordância de gênero e número** com o seu **consequente**.
 
+De cara, nota-se a presença do "trata-se de". Quando houver **"trata-se de"**, o "se" será um pronome indeterminador do sujeito (PIS), portanto, **não pode haver sujeito**, pois este é indeterminado.
+
+

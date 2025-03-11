@@ -5,3 +5,5 @@
 **ameaça** São eventos ou agentes potenciais que podem explorar uma vulnerabilidade para causar dano aos ativos. Exemplos incluem hackers, malware, desastres naturais e erros humanos.
 
 **Política de Segurança da Informação (POSIN):** é o documento formal que estabelece diretrizes corporativas e orientações para a proteção dos ativos de informação e para a gestão da segurança da informação.
+
+**SLE** representa o valor financeiro esperado de perda para um único incidente de ameaça.

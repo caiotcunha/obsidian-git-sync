@@ -9,6 +9,7 @@ Tipos de nuvem:
 
 Tipos de serviço de nuvem:
 - **IaaS (infraestrutura como serviço):** A categoria mais básica de serviços de computação em nuvem. Esse tipo de serviço permite o aluguel de infraestruturas de TI, incluindo servidores, máquinas virtuais, armazenamento, redes e sistemas operacionais, de um provedor de nuvem. No caso das IaaS, a empresa é responsável por proteger o hardware e outros recursos de computação armazenamento e rede física, enquanto o cliente é responsável pela proteção dos dados e aplicativos, e as redes virtuais.
+	- Dentro do modelo IaaS, existe um conceito conhecido como **precificação transiente**. Isso refere-se a instâncias que podem ser alugadas a preços mais baixos, porém sem garantia de disponibilidade contínua. Essas instâncias são chamadas de **instâncias spot** (ou instâncias transitórias).A principal característica dessas instâncias spot é que elas podem ser interrompidas pelo provedor de serviços a qualquer momento devido à alta demanda por recursos ou outras políticas internas. Como resultado, o custo dessas instâncias é significativamente menor em comparação com as instâncias de pagamento sob demanda, mas vem com a desvantagem da **falta de garantia de disponibilidade**.
 - **PaaS (Plataforma como serviço):** se refere aos serviços de computação em nuvem que fornecem um ambiente sob demanda para desenvolvimento, teste, fornecimento e gerenciamento de aplicativos de software. A PaaS foi criada para facilitar aos desenvolvedores criarem aplicativos móveis ou Web rapidamente, sem se preocupar com a configuração ou gerenciamento de infraestrutura subjacente de servidores, armazenamento, rede e banco de dados. Nesse caso, o provedor tem responsabilidade pela segurança quase integral.
 - **SaaS (software como serviço):** é um método para fornecer aplicativos pela internet sob demanda. Nesse caso O fornecedor é o maior responsável pela segurança, sendo o cliente muito pouco participativo.
 - **IaC (Infraestrutura como Código):** é uma prática da engenharia de software que promove a gestão e provisionamento de infraestrutura de TI através de scripts de código. Esta prática está altamente alinhada com os princípios da automação e os processos de DevOps, que buscam aumentar a eficiência e reduzir a possibilidade de erro humano na configuração e no gerenciamento de servidores e sistemas operacionais. Na prática de IaC, busca-se predominantemente uma **infraestrutura imutável**. Isso significa que, para realizar atualizações ou mudanças, cria-se uma nova instância da infraestrutura com as alterações necessárias, em vez de modificar a infraestrutura existente. Este modelo traz mais previsibilidade, estabilidade e facilidade no gerenciamento de configurações e rollback, caso necessário.
@@ -27,7 +28,7 @@ Benefícios:
 
 ## Máquinas Virtuais do Azure
 
-O windows server é uma plataforma para compilar uma infraestrutura de aplicativos, redes e serviços Web conectados, do grupo de trabalho ao data center. Ele faz a ponte entre os ambientes locais e o Azure, adicionando mais camadas de segurança enquanto ajuda você a modernizar seus aplicativos e sua infraestrutura.
+O windows server é uma plataforma para compilar uma infraestrutura de aplicativos, redes e serviços Web conectados, do grupo de trabalho ao data center. Ele faz a ponte entre os ambientes locais e o Azure, adicionando mais camadas de segurança enquanto ajuda você a modernizar seus aplicativos e sua infraestrutura. O Windows Server é uma edição do sistema operacional Windows projetada especificamente para gerenciamento de servidores. Uma das suas funcionalidades é fornecer uma ampla gama de serviços de rede, incluindo o DNS (Domain Name System) e o DHCP (Dynamic Host Configuration Protocol).
 
 As VMs (máquinas virtuais) do Azure são um dos vários tipos de [recursos de computação sob demanda escalonáveis](https://learn.microsoft.com/pt-br/azure/architecture/guide/technology-choices/compute-decision-tree) oferecidos pelo Azure. Normalmente, você escolhe uma máquina virtual quando precisa de mais controle sobre o ambiente de computação do que as outras opções oferecem.
 
@@ -39,3 +40,7 @@ Máquinas virtuais do Azure podem ser usadas de várias maneiras. Alguns exemplo
 
 
 Cloud computing allows control over resource allocation
+
+A **corrente prática** e **documentação oficial** de descritores de implantação, especialmente em ambientes que usam contêineres como _Docker_ e orquestradores como _Kubernetes_, indica que esses descritores usualmente são escritos em formato YAML e não JSON. O YAML é um formato de serialização de dados muito utilizado por ser mais legível e fácil de escrever.
+
+O Kubernetes faz o escalonamento e a recuperação no caso de falha de uma aplicação.

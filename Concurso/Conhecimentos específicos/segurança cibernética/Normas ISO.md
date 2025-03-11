@@ -5,9 +5,9 @@
 a política de segurança da informação deve ser divulgada formalmente para todos os colaboradores da organização. Isso implica que ela deve ser comunicada de maneira clara e acessível, garantindo que todos entendam como a política se aplica ao seu trabalho diário. A política também deve detalhar como ela deve ser implementada e os procedimentos que os colaboradores devem seguir. Além disso, é crucial que a política informe sobre as penalidades aplicáveis em caso de descumprimento, para que haja um entendimento claro das consequências de violar as diretrizes estabelecidas.
 
 # ISO 27001
-A norma ISO 27001 é o padrão e a referência Internacional para a gestão da Segurança da informação. A norma tem como principio geral a adoção pela organização de um conjunto de requisitos, processos e controlos com o objetivo de mitigarem e gerirem adequadamente o risco da organização. 
+A norma ISO 27001 é o padrão e a referência Internacional para a gestão da Segurança da informação. A norma tem como principio geral a adoção pela organização de um conjunto de requisitos, processos e controles com o objetivo de mitigarem e gerirem adequadamente o risco da organização. 
 
-A **ISO/IEC 27001** é uma norma internacional amplamente reconhecida para a **gestão de segurança da informação (SGSI)**. Ela fornece uma estrutura para estabelecer, implementar, operar, monitorar, revisar, manter e melhorar um sistema de gestão da segurança da informação em uma organização. Aqui está uma explicação detalhada:
+A **ISO/IEC 27001** é uma norma internacional amplamente reconhecida para a **gestão de segurança da informação (SGSI)**. Ela fornece uma estrutura para estabelecer, implementar, operar, monitorar, revisar, manter e melhorar um sistema de gestão da segurança da informação em uma organização.
 
 ---
 
@@ -71,3 +71,8 @@ A implementação da ISO 27001 segue um ciclo baseado no **PDCA (Plan-Do-Check-A
     - Implementar melhorias com base nos resultados das auditorias e na análise de desempenho.
 
 Quando uma **não conformidade** ocorre, a organização deve tomar medidas para corrigir o problema e prevenir sua recorrência. A norma sugere que, além de corrigir, é necessário realizar uma avaliação para identificar a causa raiz da não conformidade, a fim de propor ações que eliminem essa causa e evitem que o evento se repita. Isso está alinhado com o conceito de melhoria contínua, fundamental para qualquer sistema de gestão eficaz.
+
+
+A questão exige conhecimento específico sobre as **responsabilidades no gerenciamento da segurança da informação** dentro de órgãos ou entidades. De acordo com as normas mencionadas, não é exclusivamente responsabilidade do gestor de segurança da informação elaborar o plano de gestão de riscos e o relatório de tratamento de riscos. Essas tarefas são **responsabilidades do Comitê de Segurança da Informação** ou de uma estrutura similar que deve ser estabelecida dentro da organização. O gestor de segurança da informação, embora possua um papel fundamental, não atua sozinho nesse processo. Ele contribui ativamente, mas a elaboração e aprovação dos planos e relatórios são competências coletivas e envolvem vários atores dentro da instituição.
+
+Todos os órgãos e entidades da administração pública federal são obrigados a ter uma política de segurança da informação, devidamente implementada.

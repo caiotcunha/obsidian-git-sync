@@ -35,3 +35,11 @@ A arquitetura de três esquemas divide-se em três níveis:
 - **Nível conceitual:** é o nível intermediário que descreve quais dados são armazenados, e suas relações. É a visão completa do banco de dados, descrevendo o que existe no banco de dados em termos de entidades, atributos e relacionamentos, sem considerar como os dados estão armazenados fisicamente. Define o esquema conceitual.
 - **Nível externo:** também conhecido como nível de visão, é o nível mais alto e descreve diversas visões dos usuários. Cada visão é um esquema externo que representa uma parte do banco de dados que é relevante para um certo grupo de usuários. Permite que diferentes usuários tenham diferentes visões dos mesmos dados.
 
+O comando TRUNCATE é usado para remover todas as linhas de uma tabela.
+
+Chave estrangeira é um campo que aponta para a chave primária de outra tabela ou da mesma tabela, dessa forma, passa a existir uma relação entre duplas de duas tabelas ou de uma única tabela.
+
+Na modelagem dimensional, as métricas estão contidas na tabela de fatos, enquanto o caráter quantitativo das informações descritivas está armazenado na tabela dimensões.
+
+
+

@@ -50,6 +50,7 @@ A implementação das histórias ocorre em **iterações**, as quais têm uma d
 ## Scrum
 Scrum é um método ágil, iterativo e incremental para gerenciamento de projetos. Dentre os métodos ágeis, Scrum é também aquele que é melhor definido. Essa definição inclui um conjunto preciso de **papéis**, **artefatos** e **eventos**, que são listados a seguir. No resto desta seção, vamos explicar cada um deles. Mesmo com papeis diferentes, dentro de um time de scrum todos tem o mesmo nível hierárquico.
 Times de scrum são auto-organizáveis, ou seja, eles têm autonomia para decidir como e por quem as histórias serão implementadas.
+A escolha das ferramentas e métodos utilizados na metodologia de gestão de portfólio é etapa importante e conta com forte participação dos stakeholders envolvidos. O Scrum usa um conjunto de “padrões de processo de software”, que são adequados para projetos com prazos apertados e requisitos que mudam frequentemente.
 
 - **Papéis**: Dono do Produto, Scrum Master, Desenvolvedor.
 - **Artefatos**: Backlog do Produto, Backlog do Sprint, Quadro Scrum, Gráfico de Burndown.
@@ -79,7 +80,7 @@ Times de scrum são auto-organizáveis, ou seja, eles têm autonomia para decidi
 - **Increment:** seu compromisso é a definição de pronto (definition of done).
 
 ### Valores
-Os **valores do Scrum**, que guiam o comportamento do Scrum Team, são na verdade cinco: **Comprometimento, Coragem, Foco, Abertura** e **Respeito**.
+Os **valores do Scrum**, que guiam o comportamento do Scrum Team, são na verdade cinco: **Comprometimento, Coragem, Foco, Abertura** e **Respeito**.Transparência, inspeção e adaptação são pilares do Scrum que provêm do controle empírico de processos.
 
 ## Kanban
 

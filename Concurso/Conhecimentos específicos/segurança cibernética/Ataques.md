@@ -162,3 +162,11 @@ O **STP** é um protocolo de rede usado principalmente para evitar loops em re
 Os dispositivos na rede, como switches e roteadores, utilizam mensagens chamadas **Bridge Protocol Data Units (BPDUs)** para trocar informações sobre a topologia da rede. Essas mensagens são fundamentais para o funcionamento do STP.
 
 Em um **ataque ao STP**, um invasor pode enviar BPDUs falsificadas para manipular a topologia da rede. Por exemplo, o atacante pode enviar um BPDU indicando uma mudança de configuração ou topologia, fazendo com que os switches recalculam a árvore de abrangência. Isso pode resultar na interrupção do tráfego de rede ou na criação de loops, causando degradação de serviço ou mesmo falhas totais.
+
+O ataque em que se explora a utilização do buffer de espaço durante a inicialização de uma sessão do protocolo de controle de transmissão é conhecido como TCP SYN flood.
+
+**Ransomware** é um tipo de malware que atua de duas formas principais:
+- **Criptografia:** Ele criptografa os arquivos da vítima, tornando-os inacessíveis sem uma chave de descriptografia. Esta é a forma mais comum de ransomware.
+- **Bloqueio:** Outra variante menos comum pode bloquear o acesso ao sistema ou aos arquivos sem necessariamente usar criptografia.
+
+
