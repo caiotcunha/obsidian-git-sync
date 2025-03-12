@@ -10,3 +10,10 @@ Durante o prazo de carência, é pago os juros
 
 
 taxa real = taxa aparente/inflação
+
+variância é a média do quadrado dos desvios. O DP é a raiz da variância.
+
+Distribuição Binomial
+**Esperança** = **p.n**
+**Variância** = **p.q.n**
+

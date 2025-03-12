@@ -23,4 +23,6 @@ O pronome cujo faz a **concordância de gênero e número** com o seu **c
 
 De cara, nota-se a presença do "trata-se de". Quando houver **"trata-se de"**, o "se" será um pronome indeterminador do sujeito (PIS), portanto, **não pode haver sujeito**, pois este é indeterminado.
 
+Que eu aconteça (Presente do subjuntivo)
+Quando eu for. ( Futuro do Subjuntivo)
 
