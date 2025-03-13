@@ -62,8 +62,6 @@ São unidades da administração com atribuições específicas. Só podem ser c
 
 **Teoria do órgão:** Os atos praticados pelos servidores investidos em suas funções são atribuídos ou imputadas ao ente público. “Imputação volitiva”.
 
-  
-
 Quanto à hierarquia:
 - **Independentes:** não possuem outros superiores a eles, ou seja, estão no topo da organização. Exemplo: Presidência da república, prefeito de município.
 - **Autônomos:** possuem autonomia administrativa e financeira, o que lhes confere autonomia relativa. Porém são subordinados aos órgãos independentes. Exemplos: os ministérios.

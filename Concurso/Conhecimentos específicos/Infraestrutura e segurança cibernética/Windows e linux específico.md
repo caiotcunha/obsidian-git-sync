@@ -11,3 +11,14 @@
 - **Event Viewer:** Armazena os logs em arquivos conhecidos como event logs
 - **NTFS (New Technology File System)** é um sistema de arquivos desenvolvido pela Microsoft para o sistema operacional Windows. Ele oferece várias funcionalidades avançadas, como suporte a grandes volumes de dados, permissões de segurança avançadas, criptografia, cotas de disco, e muito mais. No entanto, é importante entender que o NTFS é um sistema de arquivos nativo do Windows.
 - O comando _ipconfig /release_ tem uma função específica no ambiente Windows. Quando você executa esse comando, ele libera (ou "solta") o endereço IP atualmente atribuído ao adaptador de rede. Isso é útil em situações onde você precisa remover a configuração atual de IP, seja para solucionar problemas de rede ou para forçar o adaptador a solicitar um novo endereço IP.
+
+
+# **Ferramentas Comuns**
+
+| **Windows**                                  | **Linux**                                 |     |     |
+| -------------------------------------------- | ----------------------------------------- | --- | --- |
+| - **Server Manager**                         | - **systemd** (gerenciamento de serviços) |     |     |
+| - **Event Viewer** (Visualizador de Eventos) | - **journalctl** (visualização de logs)   |     |     |
+| - **Registry Editor** (Regedit)              | - **Vim/Nano** (editores de texto)        |     |     |
+| - **Windows Defender**                       | - **UFW** (Uncomplicated Firewall)        |     |     |
+| - **Remote Desktop**                         | - **SSH** (acesso remoto)                 |     |     |

@@ -1,4 +1,11 @@
-**Containers**: são máquinas virtuais altamente padronizadas, que podem ser facilmente criadas, gerenciadas, movidas e copiadas.
+**Virtualização**: Técnica que permite criar múltiplos ambientes isolados (máquinas virtuais, ou VMs) em um único hardware físico, usando um _hypervisor_ para gerenciar recursos.
+
+**Containers**: são máquinas virtuais altamente padronizadas, que podem ser facilmente criadas, gerenciadas, movidas e copiadas. Ambientes leves e isolados que compartilham o kernel do sistema operacional host, empacotando aplicações e suas dependências para execução consistente em qualquer ambiente.
+
+**Docker**: Plataforma líder para criação e gerenciamento de containers.
+
+**Kubernetes**: Sistema de orquestração para gerenciar clusters de containers em escala.
+
 
 Benefícios:
 - Redução de custos
@@ -95,3 +102,13 @@ Para **otimizar o tamanho das imagens**, a prática recomendada é ordenar as i
 O uso de contêineres torna as aplicações portáteis de modo que o mesmo código possa ser executado em qualquer dispositivo; a máquina virtual, por sua vez, é uma cópia digital de uma máquina física.
 
 **Clusters** de alta disponibilidade são sistemas projetados para prover um alto nível de continuidade operacional. Eles fazem isso através do agrupamento (_clustering_) de dois ou mais computadores que trabalham juntos, de modo que, se um falhar, outro possa assumir suas funções, minimizando a interrupção dos serviços. Isso é essencial em ambientes onde a continuidade dos serviços é crítica.
+
+
+### **Comparação: Virtualização vs. Containers**
+
+|**Característica**|**Virtualização**|**Containers**|
+|---|---|---|
+|**Isolamento**|Nível de hardware (SO completo)|Nível de processo (kernel compartilhado)|
+|**Overhead**|Alto (cada VM tem SO próprio)|Baixo (só o necessário para a app)|
+|**Boot Time**|Minutos|Segundos|
+|**Uso típico**|Servidores dedicados, legacy apps|Microserviços, CI/CD, cloud-native|
