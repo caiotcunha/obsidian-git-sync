@@ -1,0 +1,13 @@
+- honeypots
+	- Attract attackers
+	- Discover what attackers are trying to exploit in your system
+	- Virtual world
+- honeynets
+	- honeypots combined
+	- much more belivable systems
+- honeyfiles
+	- Create files with fake information
+	- alert if someone try to access
+- honeytokens
+	- track malicious actors
+	- fake api credentials

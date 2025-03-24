@@ -1,0 +1,28 @@
+- Confidentiality
+	- Prevent disclosure of information to unauthorized individuals or systems
+	- Encryption is used to maintain confidentiality
+	- Acess controls
+	- Two-factor authentication
+- Integrity
+	- Messages can't be modified without detection
+	- There was no changes in the files transferred
+	- Hashing: Map data of an arbitrary langht to data of a fixed length
+	- Digital signatures
+	- Certificates
+	- Non-repudiation: garantee that the author made the action in question
+- Avaliability
+	- Systems and networks must be up and running
+	- Redundancy
+	- Fault tolerance
+	- Patching
+
+## Non-repudiation
+- Proof of integrity
+	- Verify data does not change
+	- we can use hash for that
+- Proof of origin
+	- Prove the source of the message
+	- Make sure signature isn't fake
+	- Sign with the private key
+	- Add a digital signature
+- 

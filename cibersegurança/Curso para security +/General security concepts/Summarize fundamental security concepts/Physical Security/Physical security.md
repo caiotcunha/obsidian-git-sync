@@ -1,0 +1,28 @@
+- Barricades/bollards
+	- prevent access
+	- Channel people through a specific access point
+	- Identify safety concerns
+- Access control vestibules
+	- they are design to control the access to an area
+- Fencing
+	- build a perimeter
+- Video surveillance
+	- Closed circuit television
+	- Camera features are important
+- Guards and access badges
+	- Security guard
+	- two-person integrity/control
+	- access badge
+- Lighting
+	- Better the view
+- Sensors
+	- infrared
+		- detect in light and dark
+		- motion detectors
+	- Pressure sensor
+	- Microwave
+		- Detect movement across large areas
+	- Ultrasonic
+		- Send ultrasonic signals, receive reflected sound waves
+		- Detect motion, collision detection, etc
+	- 
