@@ -19,7 +19,7 @@ Existem várias abordagens de virtualização, como:
 
 
 ## Kubernets
-Relacionado ao gerenciamento de cargas, orquestração, escalabilidade de containers e gerenciamento de atualização.Um pod é um grupo de containers que compartilham um espaço de rede local. O pod é a unidade de trabalho básica no Kubernetes. Services é o ponto de acesso para os pods.
+Relacionado ao gerenciamento de cargas, orquestração, escalabilidade de containers e gerenciamento de atualização. Um pod é um grupo de containers que compartilham um espaço de rede local. O pod é a unidade de trabalho básica no Kubernetes. Services é o ponto de acesso para os pods.
 **Kubernetes** é uma plataforma de orquestração de contêineres que facilita a implantação, o dimensionamento e a gestão de aplicações conteinerizadas. Um dos principais objetivos do Kubernetes é **abstrair a infraestrutura subjacente**, permitindo que os desenvolvedores foquem em configurar suas aplicações, enquanto o Kubernetes gerencia automaticamente o ambiente subjacente.
 
 ### Plano de controle
@@ -41,7 +41,7 @@ Um pod é um grupo de containers que compartilham um espaço de rede local. O po
 
 Os Nodes (nodos) são os servidores físicos ou virtuais onde os pods e seus containers rodam
 
-- **Kubelet** é responsável pelo estado de funcionamento de cada nó, garantindo que todos os recipientes no nó sejam saudáveis. Kubelet monitora o estado de uma cápsula e, se não estiver no estado desejado, a cápsula é redirecionada para o mesmo nó.O estado do nó é retransmitido a cada poucos segundos através de mensagens de batimento cardíaco para o primário. Quando o primário detecta uma falha no nó, o Controlador de Replicação observa esta mudança de estado e lança os pods em outros nós saudáveis.
+- **Kubelet** é responsável pelo estado de funcionamento de cada nó, garantindo que todos os recipientes no nó sejam saudáveis. Kubelet monitora o estado de uma cápsula e, se não estiver no estado desejado, a cápsula é redirecionada para o mesmo nó. O estado do nó é retransmitido a cada poucos segundos através de mensagens de batimento cardíaco para o primário. Quando o primário detecta uma falha no nó, o Controlador de Replicação observa esta mudança de estado e lança os pods em outros nós saudáveis.
 - O **Kube-proxy** é uma implementação de um proxyde rede e um equilibrador de carga, e suporta a abstração do serviço junto com outras operações de rede. É responsável por rotear o tráfego para o contêiner apropriado com base no IP e número da porta do pedido recebido.
 - Um **contêiner** reside dentro de uma cápsula. O contêiner é o nível mais baixo de um micro-serviço, que abriga a aplicação em funcionamento, bibliotecas e suas dependências. Os contêineres podem ser expostos ao mundo através de um endereço IP externo. A Kubernetes tem apoiado os contêineres Docker desde sua primeira versão. Em julho de 2016, o motor de contêineres rkt foi adicionado
 

@@ -1,0 +1,36 @@
+- Tecnical controls
+	- Controls implemented using systems
+	- Operating system controls
+	- Firewalls, anti-virus
+- Managerial controls
+	- Administrative controls associated with security design and implementation
+	- Security policies, standar opeating procedures
+- Operational Controls
+	- Controls implemented by people instead systems
+	- Security guards, awareness programs
+- Physical controls
+	- Limit physical access
+	- Guard Shack
+	- Fences, locks
+	- Badge readers
+
+Control Types
+- Preventive
+	- Block access to a resource
+- Deterrent
+	- Discourage an intrusion attempt
+	- Does not directly prevent access
+- Detective
+	- Identify and log an intrusion attempt
+	- May not prevent access
+- Corrective
+	- Apply a control after an event has been detected
+	- Reverse the impact of an event
+	- Continue operating with minimal downtime
+- Compensating
+	- Control using other means
+	- Existing controls aren't sufficient
+	- May be temporary
+- Directive
+	- Direct a subject towards security complience
+	- A relatively weak security control
