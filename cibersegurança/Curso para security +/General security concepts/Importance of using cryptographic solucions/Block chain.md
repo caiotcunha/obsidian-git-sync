@@ -1,0 +1,8 @@
+- A distributed ledger
+- Everyone on the blockchain network maintains the ledger
+- many pratical applications
+	- payment processing
+	- digital identification
+	- suply chain monitoring
+	- digital voting
+- 

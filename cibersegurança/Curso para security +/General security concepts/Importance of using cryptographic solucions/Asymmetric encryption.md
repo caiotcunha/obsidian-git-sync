@@ -1,0 +1,3 @@
+- Public key cryptography
+- private and public key
+- the private key is the only that can decrypt data encrypted with the public key

@@ -1,0 +1,2 @@
+- can store the private keys to have acess to the data if needed
+- This can be a legitimatew business arrangement

@@ -1,0 +1,3 @@
+- Policies, procedures, hardware, software, people
+	- Digital certificates: create, distribute, manage, store, revoke
+- Also refers to the binding of public keys to people or devices

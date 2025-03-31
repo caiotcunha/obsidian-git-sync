@@ -1,0 +1,4 @@
+- A single shared key
+- Secret key algorithm
+- Doesn't scale very well
+- Very fast to use
