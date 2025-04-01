@@ -391,3 +391,6 @@ Os sistemas integrados funcionam em diversos setores. Você pode encontrar dispo
 
 ## Tecnologias de enganação
 As empresas usam tecnologias de dissimulação para distrair os invasores das redes de produção. Eles também os usam para aprender os métodos de um invasor e para alertar sobre possíveis ataques que poderiam ser lançados contra a rede. A dissimulação adiciona uma camada falsa à infraestrutura da empresa.
+
+- honeypots
+- sinkhole DNS: impede a resolução de nomes de host para URLs específicas e pode afastar os usuários de recursos mal-intencionados
