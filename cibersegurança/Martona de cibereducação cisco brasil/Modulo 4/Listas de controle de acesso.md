@@ -158,6 +158,11 @@ Na topologia, o design deste exemplo mostra que a ACL 110, que foi configurada a
 
 O parâmetro **established** permite que apenas as respostas para o tráfego originário da rede 192.168.10.0/24 retornem a essa rede. Especificamente, uma correspondência ocorre se o segmento TCP retornando tem os bits de sinalizador ACK ou redefinir (RST) definido. Isso indica que o pacote pertence a uma conexão existente. Sem o parâmetro **established** na instrução ACL, os clientes poderiam enviar tráfego para um servidor da Web e receber tráfego retornando do servidor da Web. Todo o tráfego seria permitido.
 
+estrutura base:
+```
+access-list <número> permit|deny <protocolo> <origem> <wildcard> <destino> <wildcard> [porta]
+```
+
 # Sintaxe da ACL IPv4 estendida nomeada
 Nomear uma ACL facilita entender sua função. Para criar uma ACL estendida nomeada, use o seguinte comando de configuração global:
 ``Router(config)# ip access-list extended access-list-name``
@@ -198,4 +203,96 @@ Ativar o parâmetro **log** em um roteador ou switch Cisco afeta seriamente o 
 
 ACLs estendidas são normalmente colocadas próximo à origem
 ACLs padrão são normalmente colocadas próximo ao destino
+
+# mitigar ataques com ACLs
+
+## Mitigar ataques Spoofing
+As ACLs podem ser usadas para mitigar muitas ameaças de rede, como falsificação de endereço IP e ataques de negação de serviço (DoS). A maioria dos ataques usa algum tipo de falsificação. Spoofing de endereço IP substitui o processo de criação de pacotes normais inserindo um cabeçalho IP personalizado com um endereço IP de origem diferente. Os invasores podem esconder sua identidade, falsificando o endereço IP de origem.
+
+Existem muitas classes conhecidas de endereços IP que nunca devem ser vistas como endereços IP de origem para o tráfego que entram na rede de uma organização. Por exemplo, na figura a interface S0/0/0 é anexada à Internet e nunca deve aceitar pacotes de entrada dos seguintes endereços:
+
+- Todos os endereços de zeros
+- Endereços de transmissão
+- Endereços de host local (127.0.0.0/8)
+- Endereços de Endereçamento IP Privado Automático (APIPA) (169.254.0.0/16)
+- Endereços privados reservados (RFC 1918)
+- Intervalo de endereço IP multicast (224.0.0.0/4)
+
+A rede 192.168.1.0/24 é anexada à interface R1 G0 / 0. Essa interface deve permitir apenas pacotes de entrada com um endereço de origem dessa rede. A ACL para G0 / 0 mostrada na figura só permitirá pacotes de entrada da rede 192.168.1.0/24. Todos os outros serão descartados.
+
+## Permitir tráfego necessário através de um firewall
+Uma estratégia eficaz para atenuar ataques é permitir explicitamente apenas alguns tipos de tráfego através de um firewall. Por exemplo, o sistema de nome de domínio (DNS), o protocolo SMTP (Simple Mail Transfer Protocol) e o Protocolo de Transferência de Arquivos (FTP) são os serviços que geralmente devem ser permitidos por meio de um firewall. Também é comum configurar um firewall para que permita os administradores acesso remoto através do firewall. Secure Shell (SSH), Syslog e Simple Rede Gerenciamento Protocolo (SNMP) são exemplos de serviços que um roteador pode precisar incluir. Enquanto muitos desses serviços são úteis, eles devem ser controlados e monitorados. A exploração desses serviços leva a vulnerabilidades de segurança.
+A figura mostra um exemplo de topologia com configurações de ACL para permitir serviços específicos na interface serial 0/0/0.
+
+## Mitigar ataques icmp
+Os hackers podem usar pacotes de eco de protocolo de mensagem de controle da Internet (ICMP) para descobrir sub-redes e hosts em uma rede protegida e gerar ataques de inundação dos DOS. Hackers podem usar mensagens de redirecionamento ICMP para alterar as tabelas de roteamento do host. Tanto as mensagens do ICMP Echo e Redirect devem ser bloqueadas de entrada pelo roteador.
+
+Várias mensagens ICMP são recomendadas para operação adequada de rede e devem ser permitidas na rede interna:
+
+- **Echo reply** - Permite que os usuários façam ping em hosts externos.
+- **Source quench** - Solicita que o remetente diminua a taxa de tráfego das mensagens.
+- **Unreachable** - Gerado para pacotes que são negados administrativamente por uma ACL.
+
+Várias mensagens ICMP são necessárias para a operação de rede adequada e devem ser permitidas para sair da rede:
+
+- **Echo** - Permite que os usuários façam ping em hosts externos.
+- **Parâmetro problem** - Informa o host sobre problemas de cabeçalho de pacote.
+- **Packet too big** - Habilita a descoberta da unidade máxima de transmissão do pacote (MTU).
+- **Source quench** - Reduz o tráfego quando necessário.
+
+Como regra, bloqueie todos os outros tipos de mensagens ICMP de saída.
+
+Os ACLs são usados para bloquear o Spoofing de Endereços IP, permitem marcar seletivamente serviços específicos por meio de um firewall e permitir que somente as mensagens ICMP necessárias. A figura mostra uma topologia de amostra e possíveis configurações ACL para permitir serviços específicos do ICMP nas interfaces G0 / 0 e S0 / 0/0.
+
+## Mitigar Ataques SNMP
+Protocolos de gerenciamento, como SNMP, são úteis para monitoramento remoto e gerenciamento de dispositivos em rede. No entanto, eles ainda podem ser explorados. Se o SNMP for necessário, a exploração de vulnerabilidades SNMP pode ser mitigada aplicando ACLs de interface para filtrar pacotes SNMP de sistemas não autorizados. Uma exploração ainda pode ser possível se o pacote SNMP for provido de um endereço que foi falsificado e é permitido pela ACL.
+Essas medidas de segurança são úteis, mas os meios mais eficazes de prevenção de exploração é desativar o servidor SNMP em dispositivos iOS para os quais não é necessário. Como mostrado na figura, use o comando **no snmp-server** para desativar os serviços SNMP nos dispositivos Cisco IOS.
+``Router(config)# no snmp-server``
+
+# Visão geral do IPv6 ACL
+Nos últimos anos, muitas redes começaram a transição para um ambiente IPv6. Parte da necessidade da transição para IPv6 é por causa das fraquezas inerentes no IPv4.
+Infelizmente, como a migração para o IPv6 continua, os ataques IPv6 estão se tornando mais difundidos. IPv4 não desaparecerá durante a noite. O IPv4 coexistirá com o IPv6 e, em seguida, será gradualmente substituído pelo IPv6. Isso cria potenciais furos de segurança. Um exemplo de uma preocupação de segurança é que os atores de ameaça que alavancam o IPv4 para explorar o IPv6 em ambientes de pilha dupla. Dual Stack é um método de integração no qual um dispositivo tem conectividade para as redes IPv4 e IPv6. Em dispositivos de ambiente de pilha dupla operam com duas pilhas de protocolo IP.
+O ator de ameaças pode realizar ataques furtivos que resultam na exploração da confiança usando anfitriões empilhados duplos, as mensagens do NDP) do vizinho desonesto (NDP) e técnicas de tunelamento. O Teredo Tunneling, por exemplo, é uma tecnologia de transição IPv6 que fornece atribuição automática de endereços IPv6 quando os hosts IPv4 / IPv6 estão localizados por trás dos dispositivos Tradução de Endereços de Rede IPv4 (NAT). Isso realiza isso incorporando os pacotes IPv6 dentro dos pacotes IPv4 UDP. O ator de ameaça ganha uma posição na rede IPv4. O host comprometido envia anúncios de rogue roteador (RAS), que acionam hosts duplos empilhados para obter um endereço IPv6. O ator de ameaças pode então usar essa posição para se movimentar ou pivô, dentro da rede. O ator de ameaças pode comprometer anfitriões adicionais antes de enviar o tráfego de volta da rede, conforme mostrado na figura.
+
+# Sintaxe da ACL ipv6
+A funcionalidade do ACL no IPv6 é semelhante às ACLs no IPv4. No entanto, não há equivalente a ACLs padrão IPv4. Além disso, todos os ACLs IPv6 devem ser configurados com um nome. A ACLs IPv6 permitem filtrar com base nos endereços de origem e de destino que estão viajando de entrada e saída para uma interface específica. Eles também suportam a filtragem de tráfego com base em cabeçalhos de opção IPv6 e informações opcionais do tipo de protocolo de camada superior para a granularidade mais fina de controle, semelhante a ACLs estendidas no IPv4. Para configurar uma ACL IPv6, use o comando **ipv6 access-list** para entrar no modo de configuração da ACL IPv6. Em seguida, use a sintaxe mostrada na figura para configurar cada entrada da lista de acesso para permitir ou negar especificamente o tráfego. A sintaxe mostrada é uma versão simplificada da sintaxe do IPv6 ACE. Existem opções adicionais. Deve ser claro a partir da sintaxe fornecida que os ACLs IPv6 são consideravelmente mais flexíveis que os ACLs IPv4.
+
+Uma ACL do IPv6 contém uma negação implícita no **deny ipv6 any any.** Cada IPv6 ACL também contém regras de licença implícitas para permitir a descoberta vizinha do IPv6. O IPv6 Neighbor Discovery Protocol (NDP) requer o uso da camada de rede IPv6 para enviar anúncios vizinhos (NAS) e solicitações vizinhas (NSS). Se um administrador configurar o comando **deny ipv6 any Sem** permitir explicitamente permitir o neighbor discovery, o NDP será desativado.
+
+Na figura, R1 está permitindo o tráfego de entrada em G0 / 0 a partir de 2001: DB8: 1: 1 :: / 64 rede. Os pacotes Na e NS são explicitamente permitidos. O tráfego proveniente de qualquer outro endereço IPv6 é explicitamente negado. Se o administrador configurasse apenas a primeira instrução de permissão, a ACL teria o mesmo efeito. No entanto, é uma boa prática documentar as declarações implícitas explicitamente configurando-as.
+
+RESp
+tráfego que está saindo do roteador e indo para o host de destino
+
+R2 Gi0/0 outbound
+
+eq
+
+Se uma ACL não contiver instruções de permissão, todo o tráfego será negado por padrão.
+Se uma única ACL for aplicada a várias interfaces, ela deverá ser configurada com um número exclusivo para cada interface
+
+Esses ACEs permitem o tráfego de descoberta vizinho IPv6.
+
+0.3.255.255
+
+o uso do comando **ipv6 traffic-filter**
+
+echo
+
+estendido
+
+O ACL IPv6 Deny_WEB está permitindo todo o tráfego da Web antes que o host específico seja bloqueado.
+
+
+Aplicação de uma ACL que possua apenas afirmações ACE do tipo **deny**.
+
+Use a palavra-chave **no** e o número de sequência do ACE que será removido.
+
+host
+any
+
+
+Os dispositivos na rede 192.168.10.0/24 podem responder a quaisquer solicitações de ping.
+Uma sessão Telnet ou SSH é permitida de qualquer dispositivo no 192.168.10.0 para o roteador com essa lista de acesso atribuída.
+
 
