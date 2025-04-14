@@ -98,3 +98,99 @@ A parte **MSG** contém o significado da mensagem syslog. Isso pode variar ent
 # Logs do servidor
 Os logs do servidor são uma fonte essencial de dados para o monitoramento da segurança da rede. Os servidores de aplicativos de rede, como servidores de e-mail e Web, mantêm registros de acesso e erros. Os logs do servidor proxy DNS que documentam todas as consultas DNS e respostas que ocorrem na rede são especialmente importantes. Os logs de proxy DNS são úteis para identificar hosts que possam ter visitado sites perigosos e para identificar a exfiltração de dados DNS e conexões a servidores de comando e controle de malware. Muitos servidores UNIX e Linux usam syslog. Outros podem usar o registro proprietário. O conteúdo dos eventos do arquivo de log depende do tipo de servidor.
 Dois arquivos de log importantes para se familiarizar são os logs de acesso do servidor web Apache e os logs de acesso do Microsoft Internet Information Server (IIS). Exemplos de cada um são mostrados abaixo.
+**Apache**
+```
+203.0.113.127 – dsmith [10/Oct/2016:10:26:57 - 0500] "GET /logo_sm.gif HTTP/1.0" 200 2254 "http://www.example.com/links.html" "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0"
+```
+**Log de acesso do IIS**
+```
+6/14/2016, 16:22:43, 203.0.113.24, -, W3SVC2, WEB3, 198.51.100.10, 80, GET, /home.htm, -, 200, 0, 15321, 159, 15, HTTP/1.1, Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0), -, http://www.example.com
+```
+
+# SIEM e coleta de registros
+A tecnologia SIEM (Security Information and Event Management, gerenciamento de eventos e informações de segurança) é usada em muitas organizações para fornecer relatórios em tempo real e análise de longo prazo de eventos de segurança, conforme mostrado na figura
+
+O SIEM combina as funções essenciais de gerenciamento de eventos de segurança (SEM) e ferramentas de gerenciamento de informações de segurança (SIM) para fornecer uma visão abrangente da rede empresarial usando as seguintes funções:
+
+- **Coleta de logs** — Os registros de eventos de origens em toda a organização fornecem informações forenses importantes e ajudam a atender aos requisitos de relatórios de conformidade.
+- **Normalização** — Mapeia mensagens de log de diferentes sistemas em um modelo de dados comum, permitindo que a organização se conecte e analise eventos relacionados, mesmo que sejam inicialmente registradas em diferentes formatos de origem.
+- **Correlação** — Isso vincula registros e eventos de sistemas ou aplicativos diferentes, acelerando a detecção e reação a ameaças de segurança.
+- **Agregação** — Isso reduz o volume de dados de eventos consolidando registros de eventos duplicados.
+- **Relatórios** — Apresenta os dados de eventos agregados e correlacionados em monitoramento em tempo real e resumos de longo prazo, incluindo painéis gráficos interativos.
+- **Conformidade** — são relatórios para atender aos requisitos de várias regulamentações de conformidade.
+
+Um SIEM popular é o Splunk, que é feito por um parceiro Cisco. A figura mostra um Painel de Ameaças Splunk. Splunk é amplamente utilizado em SOCs. Outra solução SIEM popular é Security Onion com ELK, que consiste nos aplicativos integrados Elasticsearch, Logstash e Kibana. Security Onion inclui outras ferramentas de monitoramento de segurança de rede de código aberto.
+
+Como sabemos, a orquestração, a automação e a resposta de segurança (SOAR) levam o SIEM e vão além para automatizar fluxos de trabalho de resposta de segurança e facilitar a resposta de incidência. Devido à importância da segurança de rede, inúmeras empresas trouxeram excelentes produtos para o mercado de ferramentas de segurança. No entanto, essas ferramentas não têm compatibilidade e exigem monitoramento de vários painéis de produtos independentes para processar os muitos alertas que eles geram. Devido à falta de profissionais de segurança cibernética para monitorar e analisar o grande volume de dados de segurança, é importante que as ferramentas de vários fornecedores possam ser integradas em uma única plataforma. As plataformas de segurança integradas vão além do SIEM e do SOAR para unificar várias tecnologias de segurança, processos e pessoas em uma equipe unificada cujos componentes se baseiam em vez de impedirem uns aos outros. Plataformas de segurança como Cisco SecureX, Fortinet Security Fabric e Paloalto Networks Cortex XDR prometem lidar com a complexidade do monitoramento de segurança de rede integrando várias funções e fontes de dados em uma única plataforma que aumentará consideravelmente a precisão dos alertas, oferecendo defesa robusta.
+
+# Tcpdump
+A ferramenta de linha de comando tcpdump é um analisador de pacotes muito popular. Ele pode exibir capturas de pacotes em tempo real ou gravar capturas de pacotes em um arquivo. Ele captura dados detalhados de protocolo de pacotes e conteúdo. Wireshark é uma GUI construída sobre a funcionalidade tcpdump.
+A estrutura das capturas tcpdump varia dependendo do protocolo capturado e dos campos solicitados
+
+# NetFlow
+NetFlow é um protocolo desenvolvido pela Cisco como uma ferramenta para solução de problemas de rede e contabilidade baseada em sessão. O NetFlow fornece com eficiência um importante conjunto de serviços para aplicativos IP, incluindo contabilidade de tráfego de rede, faturamento de rede com base no uso, planejamento de rede, segurança, recursos de monitoramento de negação de serviço e monitoramento de rede. O NetFlow fornece informações valiosas sobre usuários e aplicativos de rede, tempos de uso de pico e roteamento de tráfego.
+O NetFlow não faz uma captura completa de pacote ou captura o conteúdo real no pacote. O NetFlow registra informações sobre o fluxo de pacotes, incluindo metadados. A Cisco desenvolveu o NetFlow e, em seguida, permitiu que ele fosse usado como base para um padrão IETF chamado IPFIX. O IPFIX é baseado no Cisco NetFlow Versão 9.
+As informações do NetFlow podem ser visualizadas com ferramentas como o nfdump. Semelhante ao tcpdump, o nfdump fornece um utilitário de linha de comando para visualizar dados NetFlow a partir do daemon de captura nfcapd ou coletor. Existem ferramentas que adicionam funcionalidade GUI à visualização de fluxos. A figura mostra uma tela da ferramenta FlowViewer de código aberto.
+Tradicionalmente, um Fluxo de IP é baseado em um conjunto de 5 a 7 atributos de pacotes IP que fluem em uma única direção. Um fluxo consiste em todos os pacotes transmitidos até que a conversa TCP termine. Os atributos de pacote IP usados pelo NetFlow são:
+- Endereço IP origem
+- Endereço IP de destino
+- Porta de origem
+- Porta de destino
+- Tipo de protocolo da camada 3
+- Classe de Serviço
+- Interface de roteador ou switch
+Todos os pacotes com o mesmo endereço IP de origem/destino, portas de origem/destino, interface de protocolo e classe de serviço são agrupados em um fluxo e, em seguida, pacotes e bytes são contabilizados. Essa metodologia de impressão digital ou determinação de um fluxo é escalável porque uma grande quantidade de informações de rede é condensada em um banco de dados de informações do NetFlow chamado cache do NetFlow.
+Todos os registros de fluxo NetFlow conterão os primeiros cinco itens na lista acima e carimbos de data/hora de início e fim do fluxo. As informações adicionais que podem aparecer são altamente variáveis e podem ser configuradas no dispositivo NetFlow Exporter. Os exportadores são dispositivos que podem ser configurados para criar registros de fluxo e transmitir esses registros de fluxo para armazenamento em um dispositivo coletor NetFlow.
+Um grande número de atributos para um fluxo está disponível. O registro IANA de entidades IPFIX lista várias centenas, sendo os primeiros 128 os mais comuns.
+Embora o NetFlow não tenha sido inicialmente concebido como ferramenta para o monitoramento de segurança de rede, ele é visto como uma ferramenta útil na análise de incidentes de segurança de rede. Ele pode ser usado para construir uma linha do tempo de comprometimento, entender o comportamento individual do host ou para rastrear a movimentação de um invasor ou explorar de host para host dentro de uma rede. A tecnologia Cisco/Lancope Stealthwatch melhora o uso de dados NetFlow para NSM.
+
+# Visibilidade e controle da aplicação
+O sistema Cisco Application Visibility and Control (AVC), que é mostrado na figura, combina várias tecnologias para reconhecer, analisar e controlar mais de 1000 aplicativos. Estes incluem voz e vídeo, e-mail, compartilhamento de arquivos, jogos, ponto a ponto (P2P) e aplicativos baseados em nuvem. A AVC usa o reconhecimento de aplicativos baseados em rede de última geração da Cisco versão 2 (NBAR2), também conhecido como NBAR de próxima geração, para descobrir e classificar os aplicativos em uso na rede. O mecanismo de reconhecimento de aplicativos NBAR2 suporta mais de 1000 aplicativos de rede.
+Para entender verdadeiramente a importância desta tecnologia, considere a figura. A identificação de aplicativos de rede por porta fornece pouca granularidade e visibilidade do comportamento do usuário. No entanto, a visibilidade do aplicativo através da identificação de assinaturas de aplicativos identifica o que os usuários estão fazendo, seja teleconferência ou download de filmes para seus telefones.
+Um sistema de gerenciamento e geração de relatórios, como o Cisco Prime, analisa e apresenta os dados de análise de aplicativos em relatórios de painel para uso pelo pessoal de monitoramento de rede. O uso de aplicativos também pode ser controlado por meio de políticas e classificação de qualidade de serviço com base nas informações do AVC.
+
+# Logs de filtro de conteúdo
+Os dispositivos que fornecem filtragem de conteúdo, como o Cisco Email Security Appliance (ESA) e o Cisco Web Security Appliance (WSA), fornecem uma ampla gama de funcionalidades para monitoramento de segurança. O log está disponível para muitas dessas funcionalidades.
+O ESA, por exemplo, tem mais de 30 logs que podem ser usados para monitorar a maioria dos aspectos da entrega de e-mail, funcionamento do sistema, antivírus, operações antispam e decisões de lista negra e lista branca. A maioria dos logs são armazenados em arquivos de texto e podem ser coletados em servidores syslog, ou podem ser enviados para servidores FTP ou SCP. Além disso, os alertas sobre o funcionamento do próprio equipamento e seus subsistemas podem ser monitorados por e-mail para administradores responsáveis pelo monitoramento e operação do dispositivo.
+Os dispositivos WSA oferecem uma profundidade de funcionamento semelhante. O WSA atua efetivamente como um proxy da Web, o que significa que ele registra todas as informações de transação de entrada e saída para tráfego HTTP. Esses logs podem ser bastante detalhados e são personalizáveis. Eles podem ser configurados em um formato de compatibilidade W3C. O WSA pode ser configurado para enviar os logs para um servidor de várias maneiras, incluindo syslog, FTP e SCP.
+Outros logs disponíveis para o WSA incluem logs de decisão da ACL, logs de varredura de malware e logs de filtragem de reputação da Web.
+A figura ilustra os painéis de “detalhamento” disponíveis nos dispositivos de filtragem de conteúdo da Cisco. Ao clicar em componentes dos relatórios Visão geral, detalhes mais relevantes são exibidos. As buscas de destino fornecem as informações mais focadas.
+
+# Logando de Dispositivos Cisco
+Os dispositivos de segurança Cisco podem ser configurados para enviar eventos e alertas para plataformas de gerenciamento de segurança usando SNMP ou syslog. A figura ilustra uma mensagem syslog gerada por um dispositivo Cisco ASA e uma mensagem syslog gerada por um dispositivo Cisco IOS.
+Observe que há dois significados usados para o recurso termo nas mensagens do syslog da Cisco. O primeiro é o conjunto padrão de valores de Facilidade que foram estabelecidos pelos padrões syslog. Esses valores são usados na parte da mensagem PRI do pacote syslog para calcular a prioridade da mensagem. A Cisco usa alguns dos valores entre 15 e 23 para identificar as Instalações de log da Cisco, dependendo da plataforma. Por exemplo, os dispositivos Cisco ASA usam syslog Facility 20 por padrão, o que corresponde a local4. O outro valor Facility é atribuído pela Cisco e ocorre na parte MSG da mensagem syslog.
+Os dispositivos Cisco podem usar formatos de mensagem syslog ligeiramente diferentes e podem usar mnemônicos em vez de IDs de mensagem, conforme mostrado na figura. Um dicionário de mensagens de syslog do Cisco ASA está disponível no site da Cisco.
+
+# Registros de Proxy
+Os servidores proxy, como os usados para solicitações Web e DNS, contêm logs valiosos que são uma fonte primária de dados para monitoramento de segurança de rede.
+Servidores proxy são dispositivos que atuam como intermediários para clientes de rede. Por exemplo, uma empresa pode configurar um proxy da Web para lidar com solicitações da Web em nome de clientes. Em vez de solicitações de recursos da Web serem enviadas diretamente para o servidor do cliente, a solicitação é enviada primeiro para um servidor proxy. O servidor proxy solicita os recursos e os retorna ao cliente. O servidor proxy gera logs de todas as solicitações e respostas. Esses logs podem ser analisados para determinar quais hosts estão fazendo as solicitações, se os destinos são seguros ou potencialmente maliciosos, e também para obter insights sobre o tipo de recursos que foram baixados.
+Proxies da Web fornecem dados que ajudam a determinar se as respostas da Web foram geradas em resposta a solicitações legítimas ou foram manipuladas para parecer respostas, mas são, de fato, explorações. Também é possível usar proxies da web para inspecionar o tráfego de saída como meio de prevenção de perda de dados (DLP). O DLP envolve a varredura do tráfego de saída para detectar se os dados que estão saindo da Web contêm informações confidenciais, confidenciais ou secretas. Exemplos de proxies populares da Web são Squid, CCProxy, Apache Traffic Server e WinGate.
+Um exemplo de um log de proxy da web do Squid na forma nativa do Squid aparece abaixo. Explicações dos valores de campo aparecem na tabela abaixo da entrada de log.
+
+**Observação**: Proxies da Web abertos, que são proxies que estão disponíveis para qualquer usuário da Internet, podem ser usados para ofuscar endereços IP de atores de ameaças. Endereços de proxy abertos podem ser usados na lista negra do tráfego da Internet.
+
+**Cisco Umbrella**
+
+O Cisco Umbrella, anteriormente OpenDNS, oferece um serviço DNS hospedado que amplia a capacidade do DNS para incluir aprimoramentos de segurança. Em vez de organizações que hospedam e mantêm listas negras, proteção contra phishing e outras seguranças relacionadas a DNS, o Cisco Umbrella fornece essas proteções em seu próprio serviço DNS. O Cisco Umbrella é capaz de aplicar muito mais recursos ao gerenciamento de DNS do que a maioria das organizações pode pagar. O Cisco Umbrella funciona em parte como um super proxy DNS nesse sentido. O pacote Cisco Umbrella de produtos de segurança aplica inteligência contra ameaças em tempo real para gerenciar o acesso DNS e a segurança dos registros DNS. Os logs de acesso DNS estão disponíveis no Cisco Umbrella para a empresa assinada. Em vez de usar servidores DNS locais ou ISP, uma organização pode optar por assinar o Cisco Umbrella para DNS e outros serviços de segurança. Um exemplo de um log de proxy DNS aparece abaixo. A tabela explica o significado dos campos na entrada de log.
+
+# Firewalls de Última Geração
+Os dispositivos de firewall da próxima geração ou NextGen estendem a segurança da rede além dos endereços IP e dos números de porta da Camada 4 para a camada do aplicativo e além. Os Firewalls NexGen são dispositivos avançados que forneceram muito mais funcionalidades do que as gerações anteriores de dispositivos de segurança de rede. Uma dessas funcionalidades é relatar painéis com recursos interativos que permitem relatórios rápidos de apontar e clicar sobre informações muito específicas sem a necessidade de SIEM ou outros correladores de eventos.
+
+A linha de dispositivos NextGen Firewall (NGFW) da Cisco usa o Firepower Services para consolidar várias camadas de segurança em uma única plataforma. Isso ajuda a conter custos e simplificar o gerenciamento. Os serviços da potência de fogo incluem visibilidade e controle de aplicativos, IPS de última geração da potência de fogo (NGIPS), filtragem de URL baseada em categoria e reputação e proteção avançada contra malware (AMP). Dispositivos Firepower permitem monitorar a segurança da rede por meio de uma GUI habilitada para Web chamada Visualizador de Eventos.
+
+Eventos comuns do NGFW incluem:
+
+- **Evento de Conexão** - Os logs de conexão contêm dados sobre sessões que são detectadas diretamente pelo NGIPS. Os eventos de conexão incluem propriedades básicas de conexão, como carimbos de data/hora, endereços IP de origem e destino, e metadados sobre por que a conexão foi registrada, como qual regra de controle de acesso registrou o evento.
+- **Evento de intrusão** - O sistema examina os pacotes que atravessam a rede em busca de atividades mal-intencionadas que possam afetar a disponibilidade, integridade e confidencialidade de um host e seus dados. Quando o sistema identifica uma possível intrusão, ele gera um evento de intrusão, que é um registro da data, hora, tipo de exploração e informações contextuais sobre a origem do ataque e seu destino.
+- **Host ou evento de ponto final** - Quando um host aparece na rede, ele pode ser detectado pelo sistema e os detalhes do hardware do dispositivo, endereçamento IP e a última presença conhecida na rede podem ser registrados.
+- **Evento de descoberta de rede** - eventos de descoberta de rede representam alterações que foram detectadas na rede monitorada. Essas alterações são registradas em resposta às diretivas de descoberta de rede que especificam os tipos de dados a serem coletados, os segmentos de rede a serem monitorados e as interfaces de hardware do dispositivo que devem ser usadas para coleta de eventos.
+- **Evento de fluxo de** rede - A descoberta de rede pode usar vários mecanismos, um dos quais é usar registros de fluxo NetFlow exportados para gerar novos eventos para hosts e servidores.
+
+**Serviços prestados pela NGFW**
+- Prevenção de intrusões (assinatura)
+- Visibilidade e controle da aplicação
+- Análise e automação da potência de fogo
+- Proteção avançada contra malware e sandbox (assinatura)
+- Criação integrada de perfis de rede
+- Filtragem de URL (assinatura)
+- Controle de política de identidade e VPN
