@@ -94,3 +94,17 @@ Depois da inicialização do IWPP, os dados da wavefront inicial são colocados 
 **Memory fences** (também conhecidas como **memory barriers**) são instruções que **impõem restrições à ordem em que as operações de leitura e escrita em memória podem ser feitas** por múltiplas **threads (ou warps)** executando em paralelo.
 
 ![[Wavefront propagation phase on a GPU.png]]
+
+## Warp operations
+- Um _warp_ é um grupo de 32 threads que executam simultaneamente na GPU.
+- Operações dentro do warp são **ultrarrápidas** e podem usar **warp-level intrinsics**, como:
+    - `__shfl_up_sync()`  
+    - `__shfl_down_sync()`
+    - `__shfl_xor_sync()`
+Essas permitem fazer **prefix-sum eficiente em hardware**, sem precisar de sincronizações complicadas.
+
+# Prefix-sum
+Acha o lugar onde  a thread deve escrever na fila
+- prefix-sum exclusivo: soma de todos os anteriores sem incluir i
+
+# Dequeue

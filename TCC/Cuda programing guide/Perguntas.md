@@ -1,0 +1,1 @@
+- Vocês usam Thread Block Clusters? Faz sentido?
