@@ -1,0 +1,12 @@
+# Conceito de redes neurais em código
+olhar os exemplos no site  de icd do flávio
+Ter a ideia da entrada e saída inicialmente
+rede neural é a alquimia moderna
+pesquise artigos que fazem redes neurais pra problemas parecidos com o seu e copie
+
+# Revisar essa matéria urgente
+
+- Qual é a derivada da função relu? É zero ou um. z>=0=1;z<0=0
+- bias começa com peso zero
+- a ultima camada é especial, precisamos pensar em qual ativação: sigmoide (duas classes), multiclasse (softmax)
+
